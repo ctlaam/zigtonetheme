@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -398,15 +399,17 @@ body.modal-open .modal.open {
   fill: var(--nav-logo-fill-color);
 }
 
-.header .nav .search-form {
+.search-form {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin-left: 16px;
   max-width: 700px;
+  margin: 0 auto;
+  padding: 24px 0;
 }
 
-.header .nav .search-form .search-input {
+.search-form .search-input {
   border: none;
   padding: 4px 8px;
   border-radius: 3px;
@@ -422,7 +425,7 @@ body.modal-open .modal.open {
   align-items: center;
 }
 
-.header .nav .search-form .search-input input {
+.search-form .search-input input {
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -442,11 +445,11 @@ body.modal-open .modal.open {
   height: 36px;
 }
 
-.header .nav .search-form .search-input input:focus {
+.search-form .search-input input:focus {
   outline: none;
 }
 
-.header .nav .search-form .search-input .icon {
+.search-form .search-input .icon {
   padding-left: 8px;
   width: 45px;
   height: 30px;
@@ -1394,8 +1397,8 @@ body.light .static-page {
   min-width: 360px;
 }
 
-.home .header .nav .sidebar-icon span {
-  background: #2fc2d4;
+.sidebar-icon span {
+  background: #fff;
 }
 
 .home .hero-wrap {
@@ -2520,7 +2523,7 @@ body.light {
 @media screen and (min-width: 375px) {
   .content .ringtones {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
 }
 @media screen and (min-width: 810px) {
@@ -2569,6 +2572,55 @@ footer p {
 .content .ringtones .ringtone, body.light .content .ringtones .wallpaper {
   background: white;
   border-radius: 14px;
+}
+
+.rt-title-home {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding-left: 15px;
+}
+
+.list-menu {
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+}
+.list-menu li {
+  float: left;
+  padding: 0 20px;
+  position: relative;
+}
+.list-menu li a {
+  color: #fff;
+}
+
+.sidebar-icon {
+  display: none; /* Ẩn phần tử theo mặc định */
+}
+
+@media screen and (max-width: 830px) {
+  .sidebar-icon {
+    display: block; /* Hiển thị phần tử khi màn hình nhỏ hơn 800px */
+  }
+  .list-menu-nav {
+    display: none;
+  }
+}
+#menu-social-links-menu-drop {
+  margin: 0;
+  background: #6a37c2;
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+#menu-social-links-menu-drop li {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+}
+#menu-social-links-menu-drop li a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=custom-style.css.map */

@@ -31,12 +31,13 @@ nav,
 section {
   display: block;
 }
+
 $--nav-bg-color: #ff0099;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -401,15 +402,18 @@ body.modal-open .modal.open {
   fill: var(--nav-logo-fill-color);
 }
 
-.header .nav .search-form {
+.search-form {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin-left: 16px;
   max-width: 700px;
+  margin: 0 auto;
+  padding: 24px 0;
+
 }
 
-.header .nav .search-form .search-input {
+.search-form .search-input {
   border: none;
   padding: 4px 8px;
   border-radius: 3px;
@@ -425,7 +429,7 @@ body.modal-open .modal.open {
   align-items: center;
 }
 
-.header .nav .search-form .search-input input {
+.search-form .search-input input {
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -433,21 +437,23 @@ body.modal-open .modal.open {
   border: none;
   font-size: 16px;
 }
+
 .social-media-links a {
   width: 30px;
   height: 36px;
 }
+
 .social-media-links a svg {
   fill: #fff;
   width: 30px;
   height: 36px;
 }
 
-.header .nav .search-form .search-input input:focus {
+.search-form .search-input input:focus {
   outline: none;
 }
 
-.header .nav .search-form .search-input .icon {
+.search-form .search-input .icon {
   padding-left: 8px;
   width: 45px;
   height: 30px;
@@ -455,6 +461,7 @@ body.modal-open .modal.open {
 
 .header .nav .sidebar-icon {
   margin: 0 16px;
+
 }
 
 .header .nav .sidebar-icon span {
@@ -469,14 +476,14 @@ body.modal-open .modal.open {
   -webkit-transform-origin: 4px 0;
   transform-origin: 4px 0;
   -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease,
-    -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease,
+  -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .header .nav .sidebar-icon span:first-child {
@@ -939,9 +946,11 @@ body.light .static-page {
   background-color: #fff;
   color: #000;
 }
+
 .content {
-    background-color: #ececec;
+  background-color: #ececec;
 }
+
 .content .upload {
   width: 100%;
   min-height: 100vh;
@@ -1002,12 +1011,12 @@ body.light .static-page {
   margin-top: 16px;
   text-align: center;
   -webkit-transition-property: background-color, border-color, color,
-    -webkit-box-shadow, -webkit-filter;
+  -webkit-box-shadow, -webkit-filter;
   transition-property: background-color, border-color, color, -webkit-box-shadow,
-    -webkit-filter;
+  -webkit-filter;
   transition-property: background-color, border-color, color, box-shadow, filter;
   transition-property: background-color, border-color, color, box-shadow, filter,
-    -webkit-box-shadow, -webkit-filter;
+  -webkit-box-shadow, -webkit-filter;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -1212,12 +1221,12 @@ body.light .static-page {
   margin-top: 16px;
   text-align: center;
   -webkit-transition-property: background-color, border-color, color,
-    -webkit-box-shadow, -webkit-filter;
+  -webkit-box-shadow, -webkit-filter;
   transition-property: background-color, border-color, color, -webkit-box-shadow,
-    -webkit-filter;
+  -webkit-filter;
   transition-property: background-color, border-color, color, box-shadow, filter;
   transition-property: background-color, border-color, color, box-shadow, filter,
-    -webkit-box-shadow, -webkit-filter;
+  -webkit-box-shadow, -webkit-filter;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
@@ -1406,8 +1415,8 @@ body.light .static-page {
   min-width: 360px;
 }
 
-.home .header .nav .sidebar-icon span {
-  background: #2fc2d4;
+.sidebar-icon span {
+  background: #fff;
 }
 
 .home .hero-wrap {
@@ -1799,11 +1808,11 @@ body.light .static-page {
   padding: 4px;
   overflow: hidden;
   background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 0.5))
+                  linear,
+                  left top,
+                  left bottom,
+                  from(rgba(0, 0, 0, 0)),
+                  to(rgba(0, 0, 0, 0.5))
   );
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   -webkit-transition: opacity 300ms ease 0s;
@@ -2377,16 +2386,16 @@ body.light .static-page {
   border-radius: 50%;
   background: var(--primary-color);
   background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(10%, var(--primary-color)),
-    color-stop(42%, rgba(241, 121, 48, 0))
+                  linear,
+                  left top,
+                  right top,
+                  color-stop(10%, var(--primary-color)),
+                  color-stop(42%, rgba(241, 121, 48, 0))
   );
   background: linear-gradient(
-    to right,
-    var(--primary-color) 10%,
-    rgba(241, 121, 48, 0) 42%
+                  to right,
+                  var(--primary-color) 10%,
+                  rgba(241, 121, 48, 0) 42%
   );
   position: relative;
   -webkit-animation: load3 1s infinite linear;
@@ -2509,7 +2518,7 @@ body.light {
 
 .content .ringtones .ringtone .meta .data .title,
 .content .ringtones .wallpaper .meta .data .title {
-  color: #000!important;
+  color: #000 !important;
 }
 
 .content .ringtones .ringtone .download-icon,
@@ -2556,7 +2565,7 @@ body.light {
 @media screen and (min-width: 375px) {
   .content .ringtones {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
 }
 
@@ -2593,19 +2602,87 @@ footer {
   background: #fe4365;
   padding: 15px 0;
   text-align: center;
+
   .social-link li {
     display: inline-block;
     margin-right: 10px;
   }
+
   .social-link {
     list-style: none;
   }
+
   p {
     padding: 0;
     margin: 0;
   }
 }
+
 .content .ringtones .ringtone, body.light .content .ringtones .wallpaper {
-    background: white;
-    border-radius: 14px;
+  background: white;
+  border-radius: 14px;
+}
+
+.rt-title-home {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  padding-left: 15px;
+}
+
+.list-menu {
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+
+  li {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.sidebar-icon {
+  display: none; /* Ẩn phần tử theo mặc định */
+}
+
+@media screen and (max-width: 830px) {
+  .sidebar-icon {
+    display: block; /* Hiển thị phần tử khi màn hình nhỏ hơn 800px */
+  }
+  .list-menu-nav {
+    display: none;
+  }
+}
+
+//@media screen and (min-width: 830px) {
+//  .sidebar-icon {
+//    display: block; /* Hiển thị phần tử khi màn hình nhỏ hơn 800px */
+//  }
+//  .list-menu {
+//    display: block;
+//  }
+//}
+
+#menu-social-links-menu-drop {
+  margin: 0;
+  background: #6a37c2;
+  //display: block;
+  list-style: none;
+  padding: 0;
+  display: none;
+
+  li {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+
+    a {
+      color: #fff;
+    }
+  }
 }
