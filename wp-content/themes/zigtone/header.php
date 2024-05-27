@@ -24,8 +24,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap"
           rel="stylesheet">
     <?php wp_head(); ?>
-    <style>
-        </style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -37,15 +35,21 @@
         <div class="header-top navbar-expand-lg">
             <div class="container">
                 <nav class="navbar py-0">
-                    <button class="navbar-toggler me-3 d-lg-none" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false"
                             aria-label="Toggle navigation">
-                        <svg class="icon menu-icon">
-                            <use xlink:href="#menu-icon"></use>
+                        <svg class="icon menu-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill="#000000" fill-rule="evenodd"
+                                      d="M18 5a1 1 0 100-2H2a1 1 0 000 2h16zm0 4a1 1 0 100-2H2a1 1 0 100 2h16zm1 3a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 5a1 1 0 100-2H2a1 1 0 100 2h16z"></path>
+                            </g>
                         </svg>
                     </button>
-                    <a class="navbar-brand d-flex align-items-center py-0" href="https://mobcup.com.co"><span
-                                class="navbar-brand-text" style="color: red;">Mob</span><span class="navbar-brand-text">Cup</span></a>
+                    <a class="navbar-brand d-flex align-items-center py-0" href="https://mobcup.com.co">
+                        <span class="navbar-brand-text" style="color: red;">Mob</span><span class="navbar-brand-text">Cup</span>
+                    </a>
                     <div class="collapse navbar-collapse" id="main-navbar">
                         <ul class="navbar-nav mb-3 mb-lg-0">
                             <li class="nav-item"><a class="nav-link " href="https://mobcup.com.co/">Home</a></li>
@@ -92,6 +96,15 @@
                             </li>
                         </ul>
                     </div>
+                    <ul class="navbar-nav flex-row ms-auto">
+                        <li class="nav-item me-2">
+                            <span id="search-btn" class="btn btn-icon btn-sm btn-default rounded-pill" style="">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
                     <div class="search-box hide-on-search">
                         <form class="search ps-lg-3" action="https://mobcup.com.co/" required="true" role="search">
                             <input id="search" class="form-control rounded-pill" autocomplete="off" name="s"
@@ -103,6 +116,7 @@
                                 </svg>
                             </button>
                         </form>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
                     </div>
                 </nav>
             </div>

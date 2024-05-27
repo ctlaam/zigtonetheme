@@ -26,6 +26,7 @@ function theme_enqueue_styles()
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0', true);
 	wp_enqueue_style('custom-style', get_template_directory_uri() . '/assets/custom-style.css');
 	wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js');
+	wp_enqueue_script('player-js', get_template_directory_uri() . '/js/plyr.min.js');
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function zigtone_setup()
