@@ -1,9 +1,9 @@
 (function ($) {
     $(document).ready(function () {
-        const sideBar = $('.sidebar-icon')
-        console.log("sideBar:", sideBar)
-        $('.sidebar-icon').click(()=>{
-            $('.list-menus-drop').slideToggle();
+        $('.play-music').click(function () {
+            console.log("vaoo dayy")
+            $(this).hide();
+            $('.spin-loading').show()
         })
     });
 }(jQuery));

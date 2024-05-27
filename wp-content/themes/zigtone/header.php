@@ -20,10 +20,12 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" id="admin-bar-css" href="./assets//custom-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" id="admin-bar-css" href="./assets//custom-style.css">
     <?php wp_head(); ?>
+    <style>
+        </style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -31,97 +33,78 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'zigtone'); ?></a>
 
-    <header id="masthead" class="site-header">
-        <div class="header">
-            <div class="nav">
-                <a href="#" class="logo"
-                   style="text-transform: uppercase; font-weight: 800;font-size: 22px; line-height: 1.3em;text-align: center;text-shadow: .02em .05em 0 rgba(0,0,0,0.4); color: #fff">🎧RingtoneBaaz</a>
-                <ul id="menu-social-links-menu" class="list-menu list-menu-nav">
-                    <li id="menu-item-40"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40">
-                        <a title="New Ringtones" href="https://zigtone.com/new-ringtones/">
-                            New Ringtones
-                        </a>
-                    </li>
-                    <li id="menu-item-44"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                        <a title="Best Ringtones" href="https://zigtone.com/best-ringtones/">
-                            Best Ringtones
-                        </a>
-                    </li>
-                    <li id="menu-item-44"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                        <a title="bollywood Ringtones" href="/bollywood/">
-                            Bollywood ringtones
-                        </a>
-                    </li>
-                    <li id="menu-item-44"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                        <a title="hindi Ringtones" href="/hindi-2/">
-                            Hindi ringtones
-                        </a>
-                    </li>
-                </ul>
-                <!--                <div class="sidebar-icon">-->
-                <!--                    <div class="social-media-links">-->
-                <!--                        <a href="/" target="_blank" rel="noopener" aria-label="Follow on Facebook"-->
-                <!--                           title="Follow www.ringtonebaaz.net on Facebook">-->
-                <!--                            <svg aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">-->
-                <!--                                <path d="M171.169 20H28.831A8.831 8.831 0 0 0 20 28.831v142.338A8.83 8.83 0 0 0 28.831 180h76.638v-61.875H84.688V93.906h20.781V76.083c0-20.666 12.621-31.919 31.056-31.919c8.83 0 16.42.657 18.632.951v21.597l-12.714.006c-10.031 0-11.974 4.767-11.974 11.762v15.425h23.982l-3.123 24.219h-20.86V180h40.701a8.831 8.831 0 0 0 8.831-8.831V28.831A8.831 8.831 0 0 0 171.169 20z"></path>-->
-                <!--                            </svg>-->
-                <!--                        </a>-->
-                <!--                        <a href="https://twitter.com/BaazRingtone" target="_blank" rel="noopener"-->
-                <!--                           aria-label="Follow on Twitter" title="Follow www.ringtonebaaz.net on Twitter">-->
-                <!--                            <svg aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">-->
-                <!--                                <path d="M66.609 173.144c67.927 0 105.074-56.276 105.074-105.074c0-1.599-.032-3.191-.106-4.774A75.133 75.133 0 0 0 190 44.175a73.717 73.717 0 0 1-21.208 5.813c7.624-4.571 13.478-11.805 16.239-20.428a74.017 74.017 0 0 1-23.449 8.964c-6.739-7.178-16.336-11.668-26.957-11.668c-20.396 0-36.935 16.539-36.935 36.927c0 2.899.325 5.716.958 8.42c-30.692-1.542-57.908-16.238-76.12-38.583a36.796 36.796 0 0 0-5.002 18.561c0 12.813 6.52 24.123 16.434 30.74a36.651 36.651 0 0 1-16.726-4.62c-.008.154-.008.309-.008.471c0 17.887 12.731 32.819 29.628 36.205a37.035 37.035 0 0 1-9.735 1.299c-2.379 0-4.693-.235-6.942-.666c4.701 14.672 18.334 25.349 34.5 25.65c-12.642 9.905-28.564 15.808-45.867 15.808c-2.98 0-5.919-.171-8.81-.511c16.344 10.473 35.75 16.587 56.609 16.587"></path>-->
-                <!--                            </svg>-->
-                <!--                        </a>-->
-                <!--                        <a href="https://www.youtube.com/channel/UC0l_fWuP9ElBxTJN7thF8Ow" target="_blank"-->
-                <!--                           rel="noopener" aria-label="Subscribe on YouTube"-->
-                <!--                           title="Subscribe to www.ringtonebaaz.net on YouTube">-->
-                <!--                            <svg aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">-->
-                <!--                                <path d="M176.66 61.49c-1.84-6.89-7.27-12.31-14.15-14.15C150.03 44 100 44 100 44s-50.03 0-62.51 3.34c-6.88 1.84-12.31 7.26-14.15 14.15C20 73.97 20 100 20 100s0 26.03 3.34 38.51c1.84 6.89 7.27 12.31 14.15 14.15C49.97 156 100 156 100 156s50.03 0 62.51-3.34c6.88-1.84 12.31-7.26 14.15-14.15C180 126.03 180 100 180 100s0-26.03-3.34-38.51zM84 124V76l41.57 24L84 124z"></path>-->
-                <!--                            </svg>-->
-                <!--                        </a>-->
-                <!--                        <a href="/" target="_blank" rel="noopener" aria-label="Follow on Instagram"-->
-                <!--                           title="Follow www.ringtonebaaz.net on Instagram">-->
-                <!--                            <svg aria-hidden="true" class="_irE _h-2 _iFA _iWM" viewBox="0 0 200 200"-->
-                <!--                                 xmlns="http://www.w3.org/2000/svg">-->
-                <!--                                <path d="M132.313 34.909c21.483.98 31.797 11.276 32.778 32.778c.668 14.642.668 49.977 0 64.625c-.98 21.483-11.276 31.797-32.778 32.778c-14.64.668-49.979.668-64.625 0c-21.483-.98-31.797-11.276-32.778-32.778c-.668-14.642-.668-49.977 0-64.625c.98-21.483 11.276-31.797 32.778-32.778c14.641-.668 49.976-.668 64.625 0zM67.031 20.516C38.273 21.828 21.85 37.812 20.516 67.031c-.688 15.09-.688 50.854 0 65.939c1.312 28.751 17.288 45.181 46.514 46.514c15.086.688 50.856.688 65.939 0c28.751-1.312 45.181-17.288 46.514-46.514c.688-15.09.688-50.854 0-65.939c-1.312-28.758-17.296-45.181-46.514-46.514c-15.089-.689-50.854-.689-65.938-.001zM100 58.937c-22.678 0-41.063 18.385-41.063 41.063S77.322 141.063 100 141.063s41.063-18.385 41.063-41.063c0-22.679-18.385-41.063-41.063-41.063zm0 67.718c-14.721 0-26.655-11.934-26.655-26.655c0-14.721 11.934-26.655 26.655-26.655c14.721 0 26.655 11.934 26.655 26.655c0 14.721-11.934 26.655-26.655 26.655z"></path>-->
-                <!--                                <circle cx="142.685" cy="57.315" r="9.596"></circle>-->
-                <!--                            </svg>-->
-                <!--                        </a>-->
-                <!--                    </div>-->
-                <!--                </div>-->
-                <div class="sidebar-icon"><span></span><span></span><span></span></div>
+    <header id="header">
+        <div class="header-top navbar-expand-lg">
+            <div class="container">
+                <nav class="navbar py-0">
+                    <button class="navbar-toggler me-3 d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <svg class="icon menu-icon">
+                            <use xlink:href="#menu-icon"></use>
+                        </svg>
+                    </button>
+                    <a class="navbar-brand d-flex align-items-center py-0" href="https://mobcup.com.co"><span
+                                class="navbar-brand-text" style="color: red;">Mob</span><span class="navbar-brand-text">Cup</span></a>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="navbar-nav mb-3 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link " href="https://mobcup.com.co/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link "
+                                                    href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/hindi">Hindi</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link "
+                                                    href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/tamil">Tamil</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link "
+                                                    href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/telugu">Telugu</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link "
+                                                    href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/bhakti">Bhakti</a>
+                            </li>
+                            <li class="nav-item has-menu">
+                                <span class="nav-link">More</span>
+                                <ul class="navbar-nav submenu">
+                                    <li class="nav-item"><a class="nav-link "
+                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/punjabi">Punjabi</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link "
+                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/english">English</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link "
+                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/bhojpuri">Bhojpuri</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link "
+                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/marathi">Marathi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-menu">
+                                <span class="nav-link">Page</span>
+                                <ul class="navbar-nav submenu">
+                                    <li class="nav-item"><a class="nav-link "
+                                                            href="https://mobcup.com.co/privacy-policy">Privacy
+                                            Policy</a></li>
+                                    <li class="nav-item"><a class="nav-link " href="https://mobcup.com.co/contact-us">Contact
+                                            Us</a></li>
+                                    <li class="nav-item"><a class="nav-link " href="https://mobcup.com.co/about-us">About
+                                            Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-box hide-on-search">
+                        <form class="search ps-lg-3" action="https://mobcup.com.co/" required="true" role="search">
+                            <input id="search" class="form-control rounded-pill" autocomplete="off" name="s"
+                                   required="true" type="search" value="" placeholder="Type and Click on the search ..."
+                                   aria-label="Search">
+                            <button type="submit" class="btn" aria-label="Search">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
             </div>
-            <ul id="menu-social-links-menu-drop" class="list-menus list-menus-drop">
-                <li id="menu-item-40"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-40">
-                    <a title="New Ringtones" href="https://zigtone.com/new-ringtones/">
-                        New Ringtones
-                    </a>
-                </li>
-                <li id="menu-item-44"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                    <a title="Best Ringtones" href="https://zigtone.com/best-ringtones/">
-                        Best Ringtones
-                    </a>
-                </li>
-                <li id="menu-item-44"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                    <a title="bollywood Ringtones" href="/bollywood/">
-                        Bollywood ringtones
-                    </a>
-                </li>
-                <li id="menu-item-44"
-                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44">
-                    <a title="hindi Ringtones" href="/hindi-2/">
-                        Hindi ringtones
-                    </a>
-                </li>
-            </ul>
-
-
         </div>
-    </header><!-- #masthead -->
+    </header>
