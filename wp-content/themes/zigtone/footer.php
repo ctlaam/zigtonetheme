@@ -11,6 +11,26 @@
  */
 
 ?>
+<div class="genre">
+    <?php
+    $categories = get_categories(array(
+        'orderby' => 'name',
+        'order'   => 'ASC',
+        'exclude' => 37
+    ));
+
+    foreach( $categories as $category ) {
+        ?>
+        <div class="item-genre">
+            <a
+                    title="<?php echo esc_html($category->name) ?>"
+                    href="<?php echo esc_url(get_category_link($category->term_id)) ?>"
+            >
+                <?php echo esc_html($category->name) ?> (<?php echo $category->category_count ?>)
+            </a>
+        </div>
+    <?php } ?>
+</div>
 <footer>
     <div class="footer">
         <div class="row">

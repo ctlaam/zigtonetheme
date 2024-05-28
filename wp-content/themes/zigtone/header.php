@@ -65,38 +65,9 @@
                             <li class="nav-item"><a class="nav-link "
                                                     href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/bhakti">Bhakti</a>
                             </li>
-                            <li class="nav-item has-menu">
-                                <span class="nav-link">More</span>
-                                <ul class="navbar-nav submenu">
-                                    <li class="nav-item"><a class="nav-link "
-                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/punjabi">Punjabi</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link "
-                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/english">English</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link "
-                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/bhojpuri">Bhojpuri</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link "
-                                                            href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/marathi">Marathi</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item has-menu">
-                                <span class="nav-link">Page</span>
-                                <ul class="navbar-nav submenu">
-                                    <li class="nav-item"><a class="nav-link "
-                                                            href="https://mobcup.com.co/privacy-policy">Privacy
-                                            Policy</a></li>
-                                    <li class="nav-item"><a class="nav-link " href="https://mobcup.com.co/contact-us">Contact
-                                            Us</a></li>
-                                    <li class="nav-item"><a class="nav-link " href="https://mobcup.com.co/about-us">About
-                                            Us</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
-                    <ul class="navbar-nav flex-row ms-auto">
+                    <ul class="navbar-nav navbar-nav-btn flex-row ms-auto">
                         <li class="nav-item me-2">
                             <span id="search-btn" class="btn btn-icon btn-sm btn-default rounded-pill" style="">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

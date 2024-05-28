@@ -240,21 +240,9 @@ get_header();
                                     <li class="ringtone list-group-item" data-id="14067">
                                         <div class="list-group-player mediPlayer"
                                              data-fid="0qpu3tyv4nz0gs838ewgmv27kz5xcwvds">
-                                            <svg class="play-music" fill="#000000" height="35px" width="35px"
-                                                 version="1.1"
-                                                 id="Layer_1"
-                                                 xmlns="http://www.w3.org/2000/svg"
-                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 viewBox="0 0 459 459" xml:space="preserve">
-                                            <g>
-                                                <g>
-                                                    <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651
-                                                        l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416
-                                                        c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151
-                                                        C315.662,233.564,313.652,237.364,310.292,239.651z"/>
-                                                </g>
-                                            </g>
-                                        </svg>
+                                            <svg height="35px" width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="#51A0A4" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path>
+                                            </svg>
                                         </div>
                                         <div class="list-group-content">
                                             <a href="https://mobcup.com.co/tu-maro-dariyo-ringtone-download-pagalworld-4nz0gs8"
