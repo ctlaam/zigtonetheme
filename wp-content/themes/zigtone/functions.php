@@ -188,3 +188,69 @@ require get_template_directory() . '/inc/customizer.php';
 if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// wallpaper
+
+function create_wallpaper2_post_type() {
+    $labels = array(
+        'name'               => __('Wallpapers'),
+        'singular_name'      => __('Wallpaper'),
+        'menu_name'          => __('Wallpapers'),
+        'name_admin_bar'     => __('Wallpaper'),
+        'add_new'            => __('Add New'),
+        'add_new_item'       => __('Add New Wallpaper'),
+        'new_item'           => __('New Wallpaper'),
+        'edit_item'          => __('Edit Wallpaper'),
+        'view_item'          => __('View Wallpaper'),
+        'all_items'          => __('All Wallpapers'),
+        'search_items'       => __('Search Wallpapers'),
+        'parent_item_colon'  => __('Parent Wallpapers :'),
+        'not_found'          => __('No wallpapers found.'),
+        'not_found_in_trash' => __('No wallpapers found in Trash.')
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'wallpaper' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => true,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
+    );
+
+    register_post_type('wallpaper', $args);
+}
+add_action('init', 'create_wallpaper2_post_type');
+
+// Đăng ký Taxonomy
+function create_wallpaper_taxonomy() {
+    $labels = array(
+//        sua het may cai Fondos de Pantalla thanh Wallpaper
+        'name' => _x( 'Wallpaper', 'taxonomy general name' ),
+        'singular_name' => _x( 'Wallpaper', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Search Wallpaper' ),
+        'all_items' => __( 'All Wallpaper' ),
+        'parent_item' => __( 'Parent Wallpaper' ),
+        'parent_item_colon' => __( 'Parent Wallpaper:' ),
+        'edit_item' => __( 'Edit Wallpaper' ),
+        'update_item' => __( 'Update Wallpaper' ),
+        'add_new_item' => __( 'Add New Wallpaper' ),
+        'new_item_name' => __( 'New Wallpaper Name' ),
+        'menu_name' => __( 'Wallpaper' ),
+    );
+
+    register_taxonomy('wallpaper',array('wallpaper'), array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'wallpaper' ),
+    ));
+}
+add_action( 'init', 'create_wallpaper_taxonomy', 0 );
