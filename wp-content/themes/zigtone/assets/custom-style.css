@@ -5035,4 +5035,1509 @@ table {
   width: 1px !important;
 }
 
+#wallper-page {
+
+
+  /* --------------Wallpaper------------- */
+}
+#wallper-page .results {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+#wallper-page .search-page-filter-links {
+  display: flex;
+  margin: 24px 0 18px;
+  flex-wrap: wrap;
+}
+#wallper-page .search-page-filter-links .left-links {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+#wallper-page .search-page-filter-links .left-links a {
+  margin-right: 5px;
+  padding: 0 16px;
+  color: rgb(34, 34, 34);
+  font-family: "Helvetica Neue LT W01_55 Roman", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15.5px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-radius: 18px;
+}
+#wallper-page .search-page-filter-links .right-links {
+  flex-shrink: 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+#wallper-page .search-page-filter-links .right-links a {
+  margin-right: 5px;
+  padding: 0px 16px;
+  color: rgb(34, 34, 34);
+  font-family: "Helvetica Neue LT W01_55 Roman", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15.5px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-radius: 18px;
+}
+#wallper-page #back-to-top,
+#wallper-page .buton-download,
+#wallper-page .item-genre,
+#wallper-page .new-badge,
+#wallper-page .order-aside p,
+#wallper-page .view-more,
+#wallper-page footer {
+  text-align: center;
+}
+#wallper-page #breadcrumbs,
+#wallper-page .all-title,
+#wallper-page .all-title h3,
+#wallper-page .box-item,
+#wallper-page .box-page,
+#wallper-page .genre,
+#wallper-page .link-post,
+#wallper-page .title-audio {
+  overflow: hidden;
+}
+#wallper-page body,
+#wallper-page html {
+  font-family: none !important;
+  height: 100%;
+}
+#wallper-page .new-badge {
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  right: -44px;
+  width: 100px;
+  bottom: -14px;
+  padding: 6px 0 26px;
+  font-size: 12px;
+  font-weight: 700;
+  transform: rotate(-50deg);
+}
+#wallper-page .box-news {
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+#wallper-page .option-2,
+#wallper-page .option-2 a {
+  font-size: 18px;
+}
+#wallper-page #breadcrumbs,
+#wallper-page .all-title,
+#wallper-page .all-title h3,
+#wallper-page .link-post,
+#wallper-page .title-audio {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wallper-page #back-to-top,
+#wallper-page .btn-view-more,
+#wallper-page .buton-download,
+#wallper-page .button-show-hide,
+#wallper-page .content-app p:hover,
+#wallper-page .img-app {
+  cursor: pointer;
+}
+#wallper-page #back-to-top,
+#wallper-page .btn-view-more a:hover,
+#wallper-page a {
+  text-decoration: none;
+}
+#wallper-page body {
+  letter-spacing: 0;
+}
+#wallper-page ul {
+  list-style: none;
+}
+#wallper-page .box-player {
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#wallper-page .option-2 a {
+  color: #4752e2;
+}
+#wallper-page .container-page p a {
+  color: #00f;
+}
+#wallper-page .icon-play {
+  font-size: 45px;
+  color: #000;
+  cursor: pointer;
+}
+#wallper-page .plyr__control {
+  border: 1px solid #000;
+  padding: 12px;
+}
+#wallper-page .plyr__control:hover {
+  background: #000 !important;
+}
+#wallper-page .plyr--full-ui input[type=range] {
+  color: #000 !important;
+}
+#wallper-page .btn-group {
+  margin-top: 10px;
+}
+#wallper-page .rt-title-home h1 {
+  font-size: 25px;
+  display: block;
+}
+#wallper-page .rt-title-home a {
+  color: #555;
+}
+#wallper-page button:focus {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+#wallper-page .buton-download:focus,
+#wallper-page .myboxform .btn-search:focus {
+  outline: 0;
+}
+#wallper-page button.btn-success {
+  border-radius: 3px;
+}
+#wallper-page .fa,
+#wallper-page .fab,
+#wallper-page .fas {
+  margin-right: 5px;
+}
+#wallper-page .ads-header {
+  margin: 0 auto;
+}
+#wallper-page h1,
+#wallper-page h2,
+#wallper-page h3,
+#wallper-page h4,
+#wallper-page h5,
+#wallper-page h6 {
+  letter-spacing: 0;
+  text-transform: none;
+}
+#wallper-page .title h1,
+#wallper-page .title h2 {
+  text-transform: uppercase;
+}
+#wallper-page .title-search {
+  color: #fff;
+}
+#wallper-page .main-cateogy {
+  padding: 0 15px;
+}
+#wallper-page .option2 {
+  margin-top: 20px;
+}
+#wallper-page .box-option2 {
+  margin-bottom: 20px;
+}
+#wallper-page .download-option2 {
+  color: red;
+  font-size: 18px;
+}
+#wallper-page .myheader {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+}
+#wallper-page #back-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 7px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  background: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+#wallper-page .logo,
+#wallper-page .wraper {
+  position: relative;
+}
+#wallper-page #back-to-top.show {
+  opacity: 1;
+}
+#wallper-page #back-to-top .fas {
+  margin-right: 0;
+  font-size: 17px;
+}
+#wallper-page .logo {
+  width: 20%;
+}
+#wallper-page .logo a {
+  margin-top: -5px;
+  font-size: 21px;
+}
+#wallper-page .loading-aside {
+  width: 15px;
+  display: none;
+}
+#wallper-page .category {
+  padding-left: 0px;
+  width: 80%;
+}
+#wallper-page .list-menu {
+  margin-top: 14px;
+  display: inline-block;
+}
+#wallper-page .container-single {
+  box-shadow: 3px 3px 3px #999;
+}
+#wallper-page .wraper {
+  min-height: 100%;
+  background: #e0e0e0;
+}
+#wallper-page #sec-ringtones {
+  margin-top: -50px;
+}
+#wallper-page .container-item2,
+#wallper-page .container-same-item {
+  position: relative;
+  background: #fff;
+}
+#wallper-page .mynav,
+#wallper-page .sub-menu {
+  background: #000;
+}
+#wallper-page .container-same-item .btn_dowload {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+#wallper-page .btn_dowload {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  border: 1px solid #000;
+  padding: 2px 5px;
+  color: #000;
+  border-radius: 4px;
+}
+#wallper-page .aside-post-category .container-item2 {
+  box-shadow: 3px 3px 4px #b5b5b5;
+  border: none;
+}
+#wallper-page .btn_dowload i {
+  color: #000;
+  font-size: 27px;
+}
+#wallper-page .loading {
+  width: 15px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 3px;
+  display: none;
+}
+#wallper-page .title-table {
+  font-size: 16px;
+  margin: 0;
+}
+#wallper-page .left-info-post {
+  float: left;
+  width: 80%;
+}
+#wallper-page .qrcode {
+  float: left;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#wallper-page .breadcrumb-post {
+  margin: 15px 0;
+}
+#wallper-page .rt-container {
+  width: 97%;
+  margin: 40px auto 0;
+}
+#wallper-page .mynav {
+  padding: 5px;
+  height: 60px;
+}
+#wallper-page .mynav a {
+  color: #fff;
+}
+#wallper-page .menu-item {
+  position: relative;
+}
+#wallper-page .sub-menu,
+#wallper-page footer {
+  position: absolute;
+}
+#wallper-page .show {
+  display: inline-block;
+}
+#wallper-page .sub-menu {
+  display: none;
+  top: 41px;
+  left: 0;
+  width: 400px;
+  z-index: 1;
+}
+#wallper-page .ads-app,
+#wallper-page .link-post {
+  display: inline-block;
+}
+#wallper-page .sub-menu li {
+  float: left;
+  padding: 20px 10px;
+  width: 50%;
+}
+#wallper-page .category > ul > li {
+  float: left;
+  padding: 0 10px;
+}
+#wallper-page .category > ul > li > a {
+  color: #fff;
+  font-size: 16px;
+}
+#wallper-page .link-post {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #565656;
+}
+#wallper-page .content-breadcrumb {
+  margin-bottom: 20px;
+}
+#wallper-page .content-breadcrumb span {
+  color: #525252;
+}
+#wallper-page .box-same-item {
+  height: 75px;
+}
+#wallper-page #breadcrumbs {
+  padding: 0;
+  margin: 0;
+}
+#wallper-page #breadcrumbs span {
+  font-size: 12px;
+}
+#wallper-page .ads-app {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #dedede;
+  padding: 10px;
+}
+#wallper-page .content-app,
+#wallper-page .img-app {
+  display: table-cell;
+  vertical-align: top;
+}
+#wallper-page .img-app img {
+  width: 50px;
+}
+#wallper-page .content-app {
+  padding-left: 10px;
+  font-size: 16px;
+  color: #1666ea;
+}
+#wallper-page .content-app p,
+#wallper-page .post-categories {
+  padding: 0;
+  margin: 0;
+}
+#wallper-page .content-app p {
+  font-size: 17px;
+  font-weight: 700;
+}
+#wallper-page .content-app .des-app {
+  font-size: 12px;
+  color: #696969;
+}
+#wallper-page .search-mobile {
+  border-radius: 4px;
+  height: 40px;
+}
+#wallper-page .star-rating {
+  margin-bottom: 7px;
+}
+#wallper-page .post-categories li {
+  float: left;
+  margin-right: 10px;
+}
+#wallper-page #tags a {
+  color: #1795bf;
+}
+#wallper-page footer {
+  width: 100%;
+  color: #fff;
+  background: #232323;
+  padding: 15px 0;
+}
+#wallper-page footer p a,
+#wallper-page footer p a:hover {
+  color: #fff;
+}
+#wallper-page .buton-download {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 3px;
+  background: #008000;
+  border: none;
+  font-size: 13px;
+}
+#wallper-page .buton-download:hover {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+#wallper-page .modal-title {
+  font-size: 18px;
+}
+#wallper-page footer p {
+  padding: 0;
+  margin: 0;
+}
+#wallper-page .myboxform {
+  position: relative;
+  width: 100%;
+}
+#wallper-page .content-download a {
+  float: left;
+  margin-right: 2px;
+}
+#wallper-page .myboxform .myinputform {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+}
+#wallper-page .myboxform .myinputform:focus {
+  outline: 0;
+  box-shadow: none;
+}
+#wallper-page .myboxform .btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: #000;
+  cursor: pointer;
+  height: 100%;
+  width: 50px;
+  border-radius: 0 3px 3px 0;
+}
+#wallper-page .myboxform .btn-search i {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+#wallper-page .box-play {
+  float: left;
+  padding-top: 13px;
+  padding-left: 15px;
+  border-right: 1px solid #bfbfbf;
+  height: 100%;
+  padding-right: 15px;
+}
+#wallper-page .box-play img {
+  width: 45px;
+}
+#wallper-page .box-item-aside {
+  height: 75px;
+}
+#wallper-page .bg-dark {
+  background: #222f3e !important;
+}
+#wallper-page .view-more {
+  background: #fb3742;
+  height: 40px;
+  width: 100%;
+}
+#wallper-page .view-more a {
+  color: #fff;
+  line-height: 40px;
+}
+#wallper-page .copyright {
+  padding: 20px;
+  color: red;
+  border: 1px solid #828282;
+  margin-bottom: 40px;
+}
+#wallper-page .title h1,
+#wallper-page .title h2,
+#wallper-page .title i {
+  color: #fff;
+  line-height: 45px;
+}
+#wallper-page .box-item,
+#wallper-page .title {
+  border-radius: 4px;
+}
+#wallper-page .title {
+  margin: 30px 0 20px 3px;
+  background: #000;
+  height: 45px;
+  padding-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 20px;
+}
+#wallper-page .box-item,
+#wallper-page .genre {
+  background: #fff;
+}
+#wallper-page .title i {
+  float: left;
+  font-size: 24px;
+}
+#wallper-page .title h2 {
+  font-size: 18px;
+  margin-left: 10px;
+}
+#wallper-page .title h1 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+#wallper-page .title-audio {
+  padding: 10px 0 0 10px;
+  display: block;
+}
+#wallper-page .icon-audio {
+  width: 18%;
+  float: left;
+  border-right: 1px solid #999;
+  margin-right: 15px;
+  padding-top: 8px;
+}
+#wallper-page .right-post {
+  width: 65%;
+  float: left;
+}
+#wallper-page .left-post {
+  width: 30%;
+  float: left;
+}
+#wallper-page .info-audio {
+  float: left;
+}
+#wallper-page .genre {
+  border-top: 2px solid #000;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+#wallper-page .item-genre {
+  padding: 10px 0;
+  float: left;
+}
+#wallper-page .genre a {
+  color: #363636;
+  font-weight: 700;
+}
+#wallper-page .info-audio a {
+  margin-top: 7px;
+}
+#wallper-page .container-item {
+  position: relative;
+  padding: 0 3px;
+  margin-bottom: 5px;
+}
+#wallper-page .container-item-category {
+  position: relative;
+  padding: 0 3px;
+  margin-bottom: 10px;
+  width: 33.3333%;
+}
+#wallper-page .box-item {
+  height: 75px;
+  box-shadow: 3px 3px 4px #b5b5b5;
+}
+#wallper-page .container-item2 {
+  width: 100%;
+  margin-bottom: 3px;
+  border: 1px solid #d4d4d4;
+  height: 79px;
+}
+#wallper-page .button-show-hide {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  display: none;
+}
+#wallper-page .cp-container {
+  float: left;
+  border-right: 1px solid #d6d6d6;
+}
+#wallper-page .breadcrumb-post ul li {
+  color: #676767;
+}
+#wallper-page .breadcrumb-post ul span {
+  color: #505050;
+  font-size: 10px;
+  margin-right: 6px;
+}
+#wallper-page .breadcrumb-post ul li a {
+  color: #676767;
+}
+#wallper-page .breadcrumb-post p {
+  line-height: 40px;
+  margin-left: 10px;
+}
+#wallper-page .rt-info-post {
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+#wallper-page .single-content {
+  margin-top: 25px;
+  color: #484848;
+}
+#wallper-page .single-content ul {
+  list-style-type: disc !important;
+}
+#wallper-page .single-content ul li {
+  padding: 10px 0 !important;
+}
+#wallper-page .single-content img {
+  display: block;
+  margin-bottom: 10px;
+}
+#wallper-page .single-content .fluidMedia {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+#wallper-page .pagination a,
+#wallper-page .pagination span {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+#wallper-page .nav-links {
+  display: block;
+  margin: 0 auto;
+}
+#wallper-page .single-content .fluidMedia iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#wallper-page .single-content h2 {
+  font-size: 18px;
+  color: #565656;
+}
+#wallper-page .rt-info-post h1 {
+  font-size: 22px;
+}
+#wallper-page .pagination a {
+  border: 1px solid #bfbfbf;
+  font-size: 15px;
+  border-radius: 3px;
+  color: #676767;
+}
+#wallper-page .pagination span {
+  background: #5c5c5c;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 15px;
+}
+#wallper-page .main-pagination {
+  margin-top: 30px;
+}
+#wallper-page .aside-post {
+  margin-bottom: 30px;
+}
+#wallper-page .container-same-item {
+  float: left;
+  padding: 0;
+}
+#wallper-page .box-same-item {
+  width: 99.4%;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 3px;
+}
+#wallper-page .content-aside {
+  height: 75px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 3px;
+}
+#wallper-page .view-size i {
+  font-size: 12px;
+}
+#wallper-page .title-aside h2,
+#wallper-page .title-aside h3 {
+  font-size: 18px;
+  line-height: 40px;
+  color: #565656;
+}
+#wallper-page .title-aside h2 {
+  margin-left: 10px;
+}
+#wallper-page .title-aside h3 {
+  margin-left: 20px;
+}
+#wallper-page .title-same-post p {
+  line-height: 40px;
+  margin-left: 20px;
+  color: #565656;
+  font-size: 20px;
+}
+#wallper-page .all-title h2,
+#wallper-page .all-title h3 {
+  font-size: 15px;
+  color: #fff;
+  line-height: 45px;
+}
+#wallper-page .order-aside {
+  height: 100%;
+  width: 30%;
+  float: left;
+  border-right: 1px solid #d9d9d9;
+}
+#wallper-page .order-aside p {
+  line-height: 75px;
+  font-size: 30px;
+}
+#wallper-page .info-aside-audio {
+  height: 100%;
+  padding: 7px;
+  width: 70%;
+  float: left;
+}
+#wallper-page .info-aside-audio p {
+  margin-bottom: 5px;
+}
+#wallper-page .info-aside-audio p a {
+  font-size: 15px;
+  color: #000;
+}
+#wallper-page .title-detail-audio {
+  text-align: left;
+  padding-left: 10px;
+}
+#wallper-page .info-aside-item {
+  font-size: 13px;
+}
+#wallper-page .table-bordered td {
+  color: #424242;
+  padding: 10px 20px;
+  border: 1px solid #d9d4d4;
+}
+#wallper-page .table-bordered th {
+  color: #000;
+  padding: 10px;
+  font-weight: 700;
+  width: 105px;
+  border: 1px solid #d9d4d4;
+}
+#wallper-page .title-detail-audio p {
+  line-height: 40px;
+  margin-left: 20px;
+  color: #565656;
+  font-size: 20px;
+}
+#wallper-page .container-search {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#wallper-page .my-container {
+  margin-top: 50px;
+}
+#wallper-page .all-title {
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  background: #000;
+  border-radius: 3px 3px 0 0;
+  height: 45px;
+}
+#wallper-page .box-page,
+#wallper-page .container-single {
+  background: #fff;
+  margin-top: 80px;
+}
+#wallper-page .left-category {
+  float: left;
+  padding-right: 50px;
+}
+#wallper-page .right-category {
+  float: left;
+}
+#wallper-page .left-single {
+  padding: 0 20px;
+  width: 70%;
+  float: left;
+}
+#wallper-page .right-single {
+  padding-right: 20px;
+  width: 30%;
+  float: left;
+}
+#wallper-page .content-page {
+  padding-right: 10px;
+  width: 50%;
+  float: left;
+  margin-bottom: 5px;
+}
+#wallper-page .box-page {
+  width: 100%;
+  min-height: 150px;
+}
+#wallper-page .container-page {
+  min-height: 600px;
+  color: #313030;
+}
+#wallper-page .container-page ol li,
+#wallper-page .container-page p {
+  font-size: 18px;
+}
+#wallper-page .container-page p iframe {
+  display: block;
+  margin: 0 auto;
+}
+#wallper-page .container-page p img,
+#wallper-page .container-page ul li img {
+  display: block;
+  margin: 20px auto;
+}
+#wallper-page .title-page {
+  margin: 20px 0;
+}
+#wallper-page .img-page {
+  float: left;
+  width: 20%;
+}
+#wallper-page .img-page img {
+  width: 100%;
+}
+#wallper-page .text-page {
+  width: 80%;
+  float: left;
+  padding: 10px 20px;
+}
+#wallper-page .box-search-mobile {
+  display: none;
+}
+#wallper-page .text-page a {
+  font-size: 20px;
+  color: #3c3c3c;
+}
+#wallper-page .des-page {
+  margin-left: 10px;
+}
+#wallper-page .btn-view-more {
+  border-radius: 3px;
+  padding: 7px 15px;
+  background: #808080;
+  box-shadow: 3px 3px 3px #9e9e9e;
+  border: none;
+  color: #fff;
+  margin-top: 5px;
+}
+#wallper-page .btn-view-more a {
+  margin: 0;
+  color: #fff;
+}
+#wallper-page img.img-blog {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  opacity: 0.7;
+}
+#wallper-page h2.title-blog {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  max-width: 100%;
+  font-size: 1em;
+  word-break: break-word;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  margin-left: 10px;
+}
+#wallper-page img.img-blog {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+  transition: all 0.2s ease-in-out;
+}
+#wallper-page .card-img-overlay:hover {
+  background: none;
+}
+#wallper-page a:hover + img.img-blog {
+  transform: scale(1.2);
+}
+#wallper-page .item-blog {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+#wallper-page .card-img-overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transform: rotate(0);
+  background: rgba(0, 0, 0, 0.45);
+}
+#wallper-page .blog .col, #wallper-page .col-1, #wallper-page .col-10, #wallper-page .col-11, #wallper-page .col-12, #wallper-page .col-2, #wallper-page .col-3, #wallper-page .col-4, #wallper-page .col-5, #wallper-page .col-6, #wallper-page .col-7, #wallper-page .col-8, #wallper-page .col-9, #wallper-page .col-auto, #wallper-page .col-lg, #wallper-page .col-lg-1, #wallper-page .col-lg-10, #wallper-page .col-lg-11, #wallper-page .col-lg-12, #wallper-page .col-lg-2, #wallper-page .col-lg-3, #wallper-page .col-lg-4, #wallper-page .col-lg-5, #wallper-page .col-lg-6, #wallper-page .col-lg-7, #wallper-page .col-lg-8, #wallper-page .col-lg-9, #wallper-page .col-lg-auto, #wallper-page .col-md, #wallper-page .col-md-1, #wallper-page .col-md-10, #wallper-page .col-md-11, #wallper-page .col-md-12, #wallper-page .col-md-2, #wallper-page .col-md-3, #wallper-page .col-md-4, #wallper-page .col-md-5, #wallper-page .col-md-6, #wallper-page .col-md-7, #wallper-page .col-md-8, #wallper-page .col-md-9, #wallper-page .col-md-auto, #wallper-page .col-sm, #wallper-page .col-sm-1, #wallper-page .col-sm-10, #wallper-page .col-sm-11, #wallper-page .col-sm-12, #wallper-page .col-sm-2, #wallper-page .col-sm-3, #wallper-page .col-sm-4, #wallper-page .col-sm-5, #wallper-page .col-sm-6, #wallper-page .col-sm-7, #wallper-page .col-sm-8, #wallper-page .col-sm-9, #wallper-page .col-sm-auto, #wallper-page .col-xl, #wallper-page .col-xl-1, #wallper-page .col-xl-10, #wallper-page .col-xl-11, #wallper-page .col-xl-12, #wallper-page .col-xl-2, #wallper-page .col-xl-3, #wallper-page .col-xl-4, #wallper-page .col-xl-5, #wallper-page .col-xl-6, #wallper-page .col-xl-7, #wallper-page .col-xl-8, #wallper-page .col-xl-9, #wallper-page .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+#wallper-page h1.title-blog {
+  background: linear-gradient(to right, #383838, #bbbaae);
+  padding: 10px 10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#wallper-page .box-same-item.item-blog {
+  border: none;
+  height: auto;
+}
+#wallper-page .box-play.box-item-block img.img-blog {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+}
+#wallper-page .item-blog .title-audio .link-post {
+  font-size: 18px;
+  padding: 0;
+}
+#wallper-page span.text-content {
+  display: inline-block;
+  max-width: 90%;
+  overflow: hidden;
+}
+#wallper-page .trimmed_content {
+  white-space: pre-wrap;
+  overflow: hidden;
+  width: 90%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#wallper-page a.link-post.blog {
+  white-space: pre-wrap;
+  width: 95%;
+}
+#wallper-page .box-same-item.item-blog {
+  width: 98%;
+  background-color: #eeeeee;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#wallper-page .box-play.box-item-block {
+  padding: 10px;
+  border-right: none;
+  width: 25%;
+}
+#wallper-page .title-aside.title-same-post.all-title.related-blogs {
+  width: 98%;
+}
+#wallper-page .box-same-item.blogs {
+  width: 98%;
+}
+#wallper-page .content-blog img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+#wallper-page .content-blog img.size-full {
+  width: 100%;
+}
+#wallper-page .content-blog img.aligncenter {
+  margin: 0 auto;
+}
+#wallper-page .content-blog img.alignright {
+  float: right;
+  margin-left: 100%;
+}
+#wallper-page .content-blog {
+  line-height: 30px;
+}
+#wallper-page .container-box-player {
+  position: relative;
+  margin-bottom: 3rem;
+}
+#wallper-page .container-box-player .box-player {
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#wallper-page .container-box-player a.buton-download.ml-2.mb-4 {
+  position: absolute;
+  right: 0;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+  background: #008000;
+  border: none;
+  font-size: 13px;
+}
+#wallper-page .kk-star-ratings.kksr-valign-top.kksr-align-left {
+  display: none !important;
+}
+@media only screen and (min-width: 0px) {
+  #wallper-page .container-item,
+  #wallper-page .container-item-category,
+  #wallper-page .content-page,
+  #wallper-page .right-category {
+    width: 100%;
+  }
+  #wallper-page .left-category {
+    width: 100%;
+    padding-right: 0;
+  }
+  #wallper-page .item-genre {
+    width: 50%;
+  }
+  #wallper-page .view-more {
+    padding: 0 10px;
+    border-radius: 3px;
+    background: #808080;
+    box-shadow: 3px 3px 3px #9e9e9e;
+    border: none;
+    color: #fff;
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #wallper-page .left-single {
+    padding: 0 20px;
+    width: 100%;
+    float: left;
+  }
+  #wallper-page .right-single,
+  #wallper-page .title {
+    padding-left: 20px;
+    width: 100%;
+  }
+  #wallper-page .right-single {
+    float: left;
+  }
+  #wallper-page .qrcode {
+    width: 100%;
+    display: none;
+  }
+  #wallper-page .link-post {
+    font-size: 14px;
+  }
+  #wallper-page .title {
+    padding-right: 2px;
+  }
+  #wallper-page .left-info-post {
+    width: 100%;
+  }
+  #wallper-page .logo {
+    text-align: left !important;
+    width: 100%;
+  }
+  #wallper-page .container-search {
+    margin-top: 90px !important;
+  }
+  #wallper-page .button-show-hide {
+    display: block;
+  }
+  #wallper-page .sub-menu {
+    background: 0 0;
+    width: 100%;
+    position: static;
+  }
+  #wallper-page .category {
+    display: none;
+    margin-top: 6px;
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+  }
+  #wallper-page .category ul {
+    text-align: left;
+    width: 100%;
+  }
+  #wallper-page .category ul li {
+    padding: 10px;
+    width: 100%;
+  }
+  #wallper-page .sub-menu li {
+    width: 100%;
+  }
+  #wallper-page .left-category {
+    padding-right: 0;
+  }
+  #wallper-page #sec-ringtones {
+    padding-bottom: 50px;
+  }
+  #wallper-page .box-search-mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #wallper-page .rt-info-post h1 {
+    font-size: 18px;
+  }
+  #wallper-page .single-content h2 {
+    font-size: 15px;
+  }
+  #wallper-page .breadcrumbs span {
+    font-size: 10px;
+  }
+  #wallper-page .title-table {
+    font-size: 14px;
+  }
+  #wallper-page .parameter i {
+    font-size: 12px;
+  }
+  #wallper-page .table-bordered th {
+    font-size: 11px;
+  }
+  #wallper-page .rt-title-home h1 {
+    font-size: 15px;
+  }
+  #wallper-page .logo a {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #wallper-page .box-play.box-item-block {
+    padding: 10px;
+    border-right: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #wallper-page .category,
+  #wallper-page .logo {
+    width: 100%;
+    text-align: center;
+  }
+  #wallper-page .category,
+  #wallper-page .list-menu {
+    padding-left: 0;
+  }
+  #wallper-page .container-search {
+    margin-top: 140px;
+  }
+  #wallper-page .mynav {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #wallper-page .title {
+    min-width: 310px;
+  }
+  #wallper-page .container-item {
+    width: 50%;
+  }
+  #wallper-page .item-genre {
+    width: 25%;
+  }
+  #wallper-page .container {
+    width: 930px;
+  }
+  #wallper-page .left-category {
+    width: 70%;
+    padding-right: 50px;
+  }
+  #wallper-page .right-category {
+    width: 30%;
+  }
+  #wallper-page .search-mobile {
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  #wallper-page .container {
+    width: 1200px;
+  }
+  #wallper-page .container-item-category {
+    width: 50%;
+  }
+  #wallper-page .left-category {
+    width: 72%;
+  }
+  #wallper-page .right-category {
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #wallper-page .container-item {
+    width: 33.33333%;
+  }
+  #wallper-page .left-category {
+    width: 75%;
+  }
+  #wallper-page .right-category {
+    width: 25%;
+  }
+  #wallper-page .item-genre {
+    width: 20%;
+  }
+}
+#wallper-page .suggested {
+  margin-top: 20px;
+}
+#wallper-page .navigation {
+  width: 100%;
+}
+#wallper-page .navigation a {
+  border-radius: 3px;
+  padding: 3px 10px;
+  background: #000;
+  border: none;
+  color: #fff;
+  margin-top: 5px;
+}
+#wallper-page .navigation .alignleft {
+  float: left;
+}
+#wallper-page .navigation .alignright {
+  float: right;
+}
+#wallper-page .w-cover-box {
+  color: white;
+  background: url("https://klingeltonekostenlos.de/wp-content/uploads/2020/12/dbg.png");
+  background-size: auto;
+  padding: 90px 10px;
+  background-position: bottom;
+}
+#wallper-page .w-cover-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+#wallper-page .w-cover-subtitle {
+  font-size: 16px;
+}
+#wallper-page .w-wallpaper-box {
+  background: #eee;
+  margin: -30px 30px 0;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#wallper-page .w-category {
+  display: inline-block;
+  padding: 4px 25px;
+  background-color: #000;
+  margin: 5px;
+  border-radius: 5px;
+}
+#wallper-page .w-category a {
+  color: #fff;
+}
+#wallper-page .w-wallpaper {
+  border-radius: 5px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#wallper-page .w-wallpaper-info {
+  height: 30px;
+  position: relative;
+  padding: 5px;
+  font-size: 15px;
+  color: #7e7e7e;
+}
+#wallper-page .w-wallpaper-info-category {
+  position: absolute;
+  left: 7px;
+}
+#wallper-page .w-wallpaper-info-download {
+  position: absolute;
+  right: 7px;
+}
+#wallper-page .w-wallpaper-body img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+#wallper-page .w-wallpaper-body img:hover {
+  cursor: pointer;
+}
+#wallper-page .w-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+#wallper-page .w-wallpaper-body:hover .w-image {
+  opacity: 0.7;
+}
+#wallper-page .text {
+  background: #000;
+  border-radius: 5px;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#wallper-page .w-wallpaper-detail-body img {
+  width: 100%;
+}
+#wallper-page a.w-wallpaper-download {
+  color: #fff;
+}
+#wallper-page a.w-wallpaper-download:hover {
+  color: #fff;
+}
+#wallper-page .unique-page h1.entry-title {
+  background: linear-gradient(to right, #383838, #bbbaae);
+  padding: 10px 10px;
+  border-radius: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#wallper-page .unique-page h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+#wallper-page .unique-page h3 {
+  margin-left: 15px;
+  font-size: 400;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+}
+#wallper-page .unique-page h3 + p {
+  margin-left: 15px;
+}
+#wallper-page .unique-page h3 + p + p {
+  margin-left: 15px;
+}
+#wallper-page .unique-page h3 + p + p + p {
+  margin-left: 15px;
+}
+#wallper-page .unique-page h3 + p + p + p + p {
+  margin-left: 15px;
+}
+#wallper-page .unique-page .entry-content {
+  padding: 0 20px;
+}
+@media only screen and (max-width: 500px) {
+  #wallper-page .w-wallpaper-box {
+    margin: -30px 15px 0;
+  }
+  #wallper-page .w-cover-title {
+    font-size: 20px;
+  }
+  #wallper-page .mobile-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #wallper-page .w-wallpaper-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px !important;
+  }
+  #wallper-page .category {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #wallper-page .mynav {
+    height: auto;
+  }
+}
+#wallper-page #countdown {
+  color: red;
+  font-weight: bold;
+}
+#wallper-page #wait-for {
+  background: #ccc;
+  padding: 10px;
+}
+@media only screen and (max-width: 960px) {
+  #wallper-page .more-content-ios, #wallper-page .more-content-android {
+    display: none;
+  }
+  #wallper-page .view-more-content-android, #wallper-page .view-more-content-ios {
+    display: block !important;
+  }
+}
+#wallper-page .search-item {
+  padding: 2px 10px;
+}
+#wallper-page .search-item a {
+  color: #000;
+}
+#wallper-page .auto-complete {
+  display: none;
+  background: #fff;
+}
+#wallper-page .card-header {
+  padding: 3px;
+}
+#wallper-page .card-body {
+  color: #565656;
+}
+#wallper-page button.btn-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+#wallper-page button.btn-link:hover {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+#wallper-page .card-header {
+  position: relative;
+}
+#wallper-page .card-header i.fas {
+  position: absolute;
+  top: 30%;
+  right: 4px;
+}
+@media only screen and (max-width: 768px) {
+  #wallper-page .last-card {
+    border-bottom: none;
+  }
+}
+#wallper-page iframe.map {
+  width: 100%;
+}
+
 /*# sourceMappingURL=custom-style.css.map */
