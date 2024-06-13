@@ -63,7 +63,7 @@
                                                     href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/telugu">Telugu</a>
                             </li>
                             <li class="nav-item"><a class="nav-link "
-                                                    href="https://mobcup.com.co/browse/ringtones/mp3/0/downloads/bhakti">Bhakti</a>
+                                                    href="http://zingtone.local/phone-wallpaper">Wallpaper</a>
                             </li>
                         </ul>
                     </div>
