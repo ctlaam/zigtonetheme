@@ -23,6 +23,7 @@ if (!defined('_S_VERSION')) {
 function theme_enqueue_styles()
 {
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+	wp_enqueue_style('player-css', get_template_directory_uri() . '/assets/css/plyr.css');
 	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0', true);
 	wp_enqueue_style('custom-style', get_template_directory_uri() . '/assets/custom-style.css');
 	wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js');
@@ -255,3 +256,12 @@ function create_wallpaper_taxonomy() {
     ));
 }
 add_action( 'init', 'create_wallpaper_taxonomy', 0 );
+
+add_action('save_post', 'update_metas');
+ 
+function update_metas($post_ID) {
+	$attachment_id = get_field('file', $post_ID);
+	$filesize = filesize(get_attached_file($attachment_id));
+	$filesize = size_format($filesize, 2);
+	update_field('file_size', $filesize, $post_ID);
+}
