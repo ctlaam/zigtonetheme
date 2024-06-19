@@ -13,9 +13,9 @@
 // Lấy thông tin cần thiết từ bài viết
 $ringtone_url = get_post_meta(get_the_ID(), 'ringtone_url', true) ?? "#";
 $duration = get_post_meta(get_the_ID(), 'duration', true) ?? "2:15 Sec";
-$downloads = get_post_meta(get_the_ID(), 'downloads', true) ?? "2077";
+$downloads = get_post_meta(get_the_ID(), 'download_count', true) ?? "2077";
 $tags = wp_get_post_tags(get_the_ID(), array('fields' => 'names')) ?? ["mp3", "iphone"];
-$category = get_the_category()[0];
+$categorys = get_the_category();
 ?>
 
 <div class="ringtone grid-item" data-id="<?php the_ID(); ?>">
@@ -37,8 +37,10 @@ $category = get_the_category()[0];
         </a>
     </div>
     <div class="tags">
-        <?php           
-               echo '<a href="' .   esc_url(get_category_link($category->term_id)) . '" rel="tag">' .  ($category->name) . '</a>'; 
+        <?php
+        foreach ($categorys as $category) {
+            echo '<a href="' . esc_url(get_category_link($category->term_id)) . '" rel="tag">' . ($category->name) . '</a>';
+        }
         ?>
     </div>
     <div class="bottom-wrap">

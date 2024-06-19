@@ -218,89 +218,50 @@ get_header();
                         </div>
                         <div class="sb-body">
                             <ul class="ringtones list-group">
-                                <li class="ringtone list-group-item" data-id="14067">
-                                    <div class="list-group-player mediPlayer" data-fid="0qpu3tyv4nz0gs838ewgmv27kz5xcwvds">
-                                        <svg height="35px" width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path fill="#51A0A4" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/tu-maro-dariyo-ringtone-download-pagalworld-4nz0gs8" class="list-group-title text-truncate" title="Tu Maro Dariyo Ringtone Download Pagalworld">Tu Maro Dariyo Song
-                                            Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:21 sec • 110 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn">
-                                        <svg class="icon download-icon" fill="#000000" width="14px" height="14px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                            <title>download-cloud</title>
-                                            <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path>
-                                        </svg>
-                                    </span>
-                                    <span class="list-group-number">#1</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="24066">
-                                    <div class="list-group-player mediPlayer" data-fid="mqnpsjh7r652j5kgxcdvya7te3n1uoabi">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/tu-mala-anguracha-ringtone-download-r652j5k" class="list-group-title text-truncate" title="Tu Mala Anguracha – Ek Phool | TDM Ringtone">Tu Mala Anguracha
-                                            Song Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:28 sec • 100 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#2</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="34065">
-                                    <div class="list-group-player mediPlayer" data-fid="uwk93c4qpcfmaj4wazr1v1qxyx5smlisl">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/nazara-khasa-aala-chahar-ringtone-download-pcfmaj4" class="list-group-title text-truncate" title="Nazara – Khasa Aala Chahar | Haryanvi Ringtone">Nazara Song
-                                            Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:34 sec • 154 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#3</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="44064">
-                                    <div class="list-group-player mediPlayer" data-fid="jc16m5o924fxijbmieobjm1cyw6zj20ty">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/pagal-babbu-maan-ringtone-download-24fxijb" class="list-group-title text-truncate" title="Pagal – Babbu Maan | Guru Randhawa Ringtone">Pagal Song Ringtone
-                                            Download</a>
-                                        <span class="list-group-subtitle">00:51 sec • 136 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#4</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="54063">
-                                    <div class="list-group-player mediPlayer" data-fid="01gw8yi64hxqwuoays5j3ucix0p8qk9yg">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/laake-logdi-de-gut-naal-phul-ni-ringtone-download-4hxqwuo" class="list-group-title text-truncate" title="Laake Logdi De Gut Naal Phul Ni – Jind Kad Ke | Instagram Reels Ringtone">Laake
-                                            Logdi De Gut Naal Phul Ni Song Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:28 sec • 255 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#5</span>
-                                </li>
+                                <?php
+                                $params = array('posts_per_page' => 15);
+                                $query = new WP_Query($params);
+
+                                if ($query->have_posts()) : the_post();
+                                    $count = 1;
+                                    while ($query->have_posts()) :
+
+                                        $query->the_post();
+                                        ?>
+                                        <li class="ringtone list-group-item" data-id="14067">
+                                            <div class="list-group-player mediPlayer"
+                                                 data-fid="0qpu3tyv4nz0gs838ewgmv27kz5xcwvds">
+                                                <svg height="35px" width="35px"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     viewBox="0 0 512 512">
+                                                    <path fill="#51A0A4"
+                                                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="list-group-content">
+                                                <a href="https://mobcup.com.co/tu-maro-dariyo-ringtone-download-pagalworld-4nz0gs8"
+                                                   class="list-group-title text-truncate"
+                                                   title="Tu Maro Dariyo Ringtone Download Pagalworld"><?php the_title() ?></a>
+                                                <span class="list-group-subtitle">00:21 sec • <?php echo esc_html(get_field('view')); ?> views</span>
+                                            </div>
+                                            <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn">
+                                            <svg class="icon download-icon" fill="#000000" width="14px" height="14px"
+                                                 viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <title>download-cloud</title>
+                                                <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path>
+                                            </svg>
+                                        </span>
+                                            <span class="list-group-number">#<?php echo $count; ?></span>
+                                        </li>
+                                        <?php
+                                        $count++;
+                                    endwhile;
+                                    wp_reset_postdata();
+                                    ?>
+                                <?php
+                                endif;
+                                ?>
+
                             </ul>
                         </div>
                     </div>
@@ -316,86 +277,50 @@ get_header();
                         </div>
                         <div class="sb-body">
                             <ul class="ringtones list-group">
-                                <li class="ringtone list-group-item" data-id="139">
-                                    <div class="list-group-player mediPlayer" data-fid="mayfhj9wai4hep4qglxv50goha0jt2qcy">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/leo-ordinary-person-ringtone-ai4hep4" class="list-group-title text-truncate" title="LEO Ordinary Person Ringtone Download">LEO Ordinary Person Song
-                                            Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:55 sec • 736403 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#1</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="245">
-                                    <div class="list-group-player mediPlayer" data-fid="b05w9scn8yj2haby1d0shszg60tmp70u1">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/ruaan-hindi-song-ringtone-8yj2hab" class="list-group-title text-truncate" title="Ruaan – Tiger 3 | Arijit Singh | Hindi Song Ringtone Download">Ruaan
-                                            Song Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:43 sec • 180503 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#2</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="347">
-                                    <div class="list-group-player mediPlayer" data-fid="gdt5ywxrhn6mx20qvx8yuhxmewvp97xvd">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/tujhe-yaad-na-meri-aayi-2-ringtone-b-praak-hn6mx20" class="list-group-title text-truncate" title="Tujhe Yaad Na Meri Aayi 2 Ringtone Download – B Praak">Tujhe Yaad
-                                            Na Meri Aayi 2 Ringtone Download – B Praak</a>
-                                        <span class="list-group-subtitle">00:28 sec • 168159 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#3</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="451">
-                                    <div class="list-group-player mediPlayer" data-fid="z67cmrsi6194lf7l38vqo0xaz0gsjajc4">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/sunte-hain-jab-pyar-ho-to-instrumental-ringtone-6194lf7" class="list-group-title text-truncate" title="Sunte Hain Jab Pyar Ho To Instrumental Ringtone Download">Sunte
-                                            Hain Jab Pyar Ho To Song Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:26 sec • 258751 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#4</span>
-                                </li>
-                                <li class="ringtone list-group-item" data-id="552">
-                                    <div class="list-group-player mediPlayer" data-fid="tz1yjkrioveh7p25staz6xsyovpjhsfqw">
-                                        <svg class="icon play">
-                                            <use xlink:href="#play-icon"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="list-group-content">
-                                        <a href="https://mobcup.com.co/so-beautiful-so-elegant-just-looking-like-a-wow-ringtone-oveh7p2" class="list-group-title text-truncate" title="So Beautiful So Elegant JUst Looking Like A Wow Ringtone Download">So
-                                            Beautiful So Elegant Song Ringtone Download</a>
-                                        <span class="list-group-subtitle">00:05 sec • 190972 views</span>
-                                    </div>
-                                    <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn"><svg class="icon download-icon">
-                                            <use xlink:href="#download-icon"></use>
-                                        </svg></span>
-                                    <span class="list-group-number">#5</span>
-                                </li>
+                                <?php
+                                $params = array('posts_per_page' => 15);
+                                $query = new WP_Query($params);
+
+                                if ($query->have_posts()) : the_post();
+                                    $count = 1;
+                                    while ($query->have_posts()) :
+
+                                        $query->the_post();
+                                        ?>
+                                        <li class="ringtone list-group-item" data-id="14067">
+                                            <div class="list-group-player mediPlayer"
+                                                 data-fid="0qpu3tyv4nz0gs838ewgmv27kz5xcwvds">
+                                                <svg height="35px" width="35px"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     viewBox="0 0 512 512">
+                                                    <path fill="#51A0A4"
+                                                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="list-group-content">
+                                                <a href="https://mobcup.com.co/tu-maro-dariyo-ringtone-download-pagalworld-4nz0gs8"
+                                                   class="list-group-title text-truncate"
+                                                   title="Tu Maro Dariyo Ringtone Download Pagalworld"><?php the_title() ?></a>
+                                                <span class="list-group-subtitle">00:21 sec • <?php echo esc_html(get_field('view')); ?> views</span>
+                                            </div>
+                                            <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn">
+                                            <svg class="icon download-icon" fill="#000000" width="14px" height="14px"
+                                                 viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                                <title>download-cloud</title>
+                                                <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path>
+                                            </svg>
+                                        </span>
+                                            <span class="list-group-number">#<?php echo $count; ?></span>
+                                        </li>
+                                        <?php
+                                        $count++;
+                                    endwhile;
+                                    wp_reset_postdata();
+                                    ?>
+                                <?php
+                                endif;
+                                ?>
+
                             </ul>
                         </div>
                     </div>
