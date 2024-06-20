@@ -20,7 +20,6 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" id="admin-bar-css" href="./assets//custom-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -45,8 +44,8 @@
                                 </g>
                             </svg>
                         </button>
-                        <a class="navbar-brand d-flex align-items-center py-0" href="https://mobcup.com.co">
-                            <span class="navbar-brand-text" style="color: red;">Mob</span><span class="navbar-brand-text">Cup</span>
+                        <a class="navbar-brand d-flex align-items-center py-0" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                            <span class="navbar-brand-text" style="color: red;">Zingtone</span><span class="navbar-brand-text">Free</span>
                         </a>
                         <div class="collapse navbar-collapse" id="main-navbar">
                             <ul class="navbar-nav mb-3 mb-lg-0">

@@ -11,7 +11,7 @@
  */
 
 ?>
-<div class="genre row">
+<div class="genre row m-0">
     <?php
     $categories = get_categories(array(
         'orderby' => 'name',

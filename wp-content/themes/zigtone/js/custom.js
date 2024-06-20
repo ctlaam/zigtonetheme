@@ -50,4 +50,41 @@ jQuery(document).ready(function ($) {
             timeleft -= 1;
         }, 1000);
     });
+
+    $(".carousel").on("touchstart", function(event){
+        var xClick = event.originalEvent.touches[0].pageX;
+        $(this).one("touchmove", function(event){
+            var xMove = event.originalEvent.touches[0].pageX;
+            if( Math.floor(xClick - xMove) > 5 ){
+                $(this).carousel('next');
+            }
+            else if( Math.floor(xClick - xMove) < -5 ){
+                $(this).carousel('prev');
+            }
+        });
+        $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+        });
+    });
+
+    $(document).on('click', '.w-wallpaper', function () {
+        var $jq = jQuery.noConflict();
+        let title = $(this).data('title');
+        let file = $(this).data('file');
+        let fileIOS = $(this).data('file-ios');
+        let carouselInner = $(this).data('carousel');
+        $('#w-wallpaper-detail-title').html(title);
+        $('.w-wallpaper-download').attr('href', file);
+        $('.w-wallpaper-download-ios').attr('href', fileIOS);
+        $('.carousel-inner').html(carouselInner);
+        $jq('#w-wallpaper-detail').modal('toggle');
+    });
+
+    $('.carousel').on('slide.bs.carousel', function (event) {
+        let currentIndex = $(event.relatedTarget).index();
+        let linkDownload = $('.carousel-item').eq(currentIndex).data('file');
+        let linkDownloadIOS = $('.carousel-item').eq(currentIndex).data('file-ios');
+        $('.w-wallpaper-download').attr('href', linkDownload);
+        $('.w-wallpaper-download-ios').attr('href', linkDownloadIOS);
+    });
 });
