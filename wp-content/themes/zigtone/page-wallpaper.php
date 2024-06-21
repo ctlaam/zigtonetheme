@@ -10,30 +10,20 @@ get_header();
         </div>
         <div class="sc-2d789a6b-0 ebzgLE search-page-filter-links">
             <div class="left-links">
-                <a translate="no" class="sort-curated activePath activeQuery"
-                   href="/search/iphone%20wallpaper?page=1&amp;path=_topics%7Csearch_filter-%24photos&amp;sort=curated">Curated</a>
-                <a
-                        class="activePath"
-                        href="/search/iphone%20wallpaper?page=1&amp;path=_topics%7Csearch_filter-%24photos&amp;sort=popular">Popular</a>
-                <a
-                        class="activePath"
-                        href="/search/iphone%20wallpaper?page=1&amp;path=_topics%7Csearch_filter-%24photos&amp;sort=new">New
-                </a>
+                <?php
+                $categories = get_terms('wallpaper', array(
+//						'orderby' => 'name',
+//						'order'   => 'ASC'
+                ));
+
+                foreach( $categories as $category ) {
+                    ?>
+                    <a class="activeQuery active activePath"
+                       href="<?php echo esc_url(get_category_link($category->term_id)) ?>"><?php echo esc_html($category->name) ?></a>
+                <?php } ?>
             </div>
             <div class="right-links">
-                <a class="activeQuery active activePath"
-                   href="/search/iphone%20wallpaper?page=1&amp;sort=curated&amp;path=_topics">Photos</a>
-                <a class="activePath"
-                   href="/search/iphone%20wallpaper?page=1&amp;sort=curated&amp;path=_topics%7Csearch_filter-%24illustrations">Illustrations</a>
-                <a class="has-children activePath"
-                   href="/search/iphone%20wallpaper?page=1&amp;sort=curated&amp;path=_topics%7Csearch_filter-%24pngelements">PNG
-                    Elements
-                    <div class="sc-acd7fdd0-0 iIzwgp">
-                        <div class="collapse-indicator">
-                            <div class="arrow"></div>
-                        </div>
-                    </div>
-                </a>
+
             </div>
         </div>
         <div class="row w-wallpapers-container" style="margin-left:0;margin-right:0;">
@@ -63,7 +53,7 @@ get_header();
                                 $active = 'active';
                             }
                             $link_download = get_page_link($download_page) . '?id=' . $image_inner . '&post=' . get_the_ID();
-                            $carousel_inner .= '<div class="carousel-item ' . $active . '" data-file="' . $link_download . '"><img class="d-block w-100" src="' . $image_link . '"></div>';
+                            $carousel_inner .= '<div class="carousel-item ' . $active . '" data-file="' . $link_download . '" " data-file-ios="' . $image_link . '"><img class="d-block w-100" src="' . $image_link . '"></div>';
                         }
                         ?>
                         <div id="wallpaper-<?php echo get_the_ID() . '-' . $image ?>" class="w-wallpaper" data-title="<?php echo get_the_title() ?>" data-carousel="<?php echo htmlentities($carousel_inner); ?>" data-file="<?php echo get_page_link($download_page) . '?id=' . $image . '&post=' . get_the_ID() ?>" data-file-ios="<?php echo wp_get_attachment_image_src($image, 'full')[0] ?>">

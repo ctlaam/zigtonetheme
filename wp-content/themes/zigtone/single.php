@@ -248,48 +248,48 @@ get_header();
                                                     <i class="fas fa-download"></i>M4R
                                                 </a>
 
-<!--                                                <div class="mt-4 w-gift-box">-->
-<!--                                                    <div class="mb-3">-->
-<!--                                                        <strong>Geschenk für dich</strong>-->
-<!--                                                    </div>-->
-<!--                                                    --><?php
-//                                                    $images = array();
-//                                                    $params = array(
-//                                                        'post_type' => 'wallpaper',
-//                                                        'posts_per_page' => 2
-//                                                    );
-//                                                    $query = new WP_Query($params);
-//
-//                                                    if ( $query->have_posts() ) :
-//                                                        while ( $query->have_posts() ) :
-//                                                            $query->the_post();
-//                                                            $id = get_the_ID();
-//                                                            $files = get_field('file');
-//                                                            foreach ($files as $f) {
-//                                                                $i = array(
-//                                                                    'id' => $id,
-//                                                                    'file' => $f,
-//                                                                    'url' => wp_get_attachment_image_src($f, 'home-thumb')[0]
-//                                                                );
-//                                                                array_push($images, $i);
-//                                                            }
-//                                                        endwhile;
-//                                                    endif;
-//
-//                                                    $rand_keys = array_rand($images, 4);
-//                                                    foreach ($rand_keys as $k) {
-//                                                        $image = $images[$k];
-//                                                        ?>
-<!--                                                        <div class="w-gift">-->
-<!--                                                            <a href="https://klingeltonekostenlos.de/hintergrundbilder-handy#wallpaper---><?php //echo $image['id'] ?><!-----><?php //echo $image['file'] ?><!--" rel="nofollow" target="_blank">-->
-<!--                                                                <img src="--><?php //echo $image['url'] ?><!--"rel="nofollow" target="_blank">-->
-<!--                                                            </a>-->
-<!--                                                        </div>-->
-<!--                                                    --><?php //} ?>
-<!--                                                    <div class="mt-3 text-center p-1">-->
-<!--                                                        <small>Coole Klingeltöne + Schöne Hintergrundbilder für Handy</small>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
+                                                <div class="mt-4 w-gift-box">
+                                                    <div class="mb-3">
+                                                        <strong>Geschenk für dich</strong>
+                                                    </div>
+                                                    <?php
+                                                    $images = array();
+                                                    $params = array(
+                                                        'post_type' => 'wallpaper2',
+                                                        'posts_per_page' => 2
+                                                    );
+                                                    $query = new WP_Query($params);
+
+                                                    if ( $query->have_posts() ) :
+                                                        while ( $query->have_posts() ) :
+                                                            $query->the_post();
+                                                            $id = get_the_ID();
+                                                            $files = get_field('file');
+                                                            foreach ($files as $f) {
+                                                                $i = array(
+                                                                    'id' => $id,
+                                                                    'file' => $f,
+                                                                    'url' => wp_get_attachment_image_src($f, 'home-thumb')[0]
+                                                                );
+                                                                array_push($images, $i);
+                                                            }
+                                                        endwhile;
+                                                    endif;
+
+                                                    $rand_keys = array_rand($images, 4);
+                                                    foreach ($rand_keys as $k) {
+                                                        $image = $images[$k];
+                                                        ?>
+                                                        <div class="w-gift">
+                                                            <a href="http://zingtone.local/phone-wallpaper#wallpaper-<?php echo $image['id'] ?>-<?php echo $image['file'] ?>" rel="nofollow" target="_blank">
+                                                                <img src="<?php echo $image['url'] ?>"rel="nofollow" target="_blank">
+                                                            </a>
+                                                        </div>
+                                                    <?php } ?>
+                                                    <div class="mt-3 text-center p-1">
+                                                        <small>Coole Klingeltöne + Schöne Hintergrundbilder für Handy</small>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -49,7 +49,23 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
+<script>
+        let hash = window.location.hash.substr(1);
+        let st = '#' + hash;
 
+        if (hash.length > 0 && $(st).length > 0) {
+        let title = $(st).data('title');
+        let file = $(st).data('file');
+        let fileIOS = $(st).data('file-ios');
+        let carouselInner = $(st).data('carousel');
+        console.log(title);
+        $('#w-wallpaper-detail-title').html(title);
+        $('.w-wallpaper-download').attr('href', file);
+        $('.w-wallpaper-download-ios').attr('href', fileIOS);
+        $('.carousel-inner').html(carouselInner);
+        $('#w-wallpaper-detail').modal('toggle');
+    }
+</script>
 </body>
 
 </html>

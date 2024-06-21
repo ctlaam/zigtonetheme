@@ -66,9 +66,8 @@ jQuery(document).ready(function ($) {
             $(this).off("touchmove");
         });
     });
-
+    var $jq = jQuery.noConflict();
     $(document).on('click', '.w-wallpaper', function () {
-        var $jq = jQuery.noConflict();
         let title = $(this).data('title');
         let file = $(this).data('file');
         let fileIOS = $(this).data('file-ios');
@@ -80,11 +79,12 @@ jQuery(document).ready(function ($) {
         $jq('#w-wallpaper-detail').modal('toggle');
     });
 
-    $('.carousel').on('slide.bs.carousel', function (event) {
+    $jq('.carousel').on('slide.bs.carousel', function (event) {
         let currentIndex = $(event.relatedTarget).index();
         let linkDownload = $('.carousel-item').eq(currentIndex).data('file');
         let linkDownloadIOS = $('.carousel-item').eq(currentIndex).data('file-ios');
         $('.w-wallpaper-download').attr('href', linkDownload);
         $('.w-wallpaper-download-ios').attr('href', linkDownloadIOS);
+
     });
 });
