@@ -5557,7 +5557,7 @@ input[type="range"].plyr__tab-focus::-webkit-slider-runnable-track {
   width: 1px !important;
 }
 
-#wallper-page {
+.wallper-page {
   .results {
     -webkit-box-flex: 1;
     flex-grow: 1;
@@ -7181,6 +7181,8 @@ input[type="range"].plyr__tab-focus::-webkit-slider-runnable-track {
   }
 
   .w-wallpaper-info {
+    display: flex;
+    justify-content: space-between;
     height: 30px;
     position: relative;
     padding: 5px;
@@ -7201,6 +7203,7 @@ input[type="range"].plyr__tab-focus::-webkit-slider-runnable-track {
   .w-wallpaper-body img {
     width: 100%;
     border-radius: 5px 5px 0px 0px;
+    height: 500px;
   }
 
   .w-wallpaper-body img:hover {
@@ -7464,4 +7467,23 @@ input[type="range"].plyr__tab-focus::-webkit-slider-runnable-track {
       outline-offset: .2em;
     }
   }
+}
+.w-wallpaper-info {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  position: relative;
+  padding: 5px;
+  font-size: 15px;
+  color: #7e7e7e;
+}
+
+.w-wallpaper-info-category {
+  position: absolute;
+  left: 7px;
+}
+
+.w-wallpaper-info-download {
+  position: absolute;
+  right: 7px;
 }

@@ -4,7 +4,7 @@ $category = get_queried_object();
 ?>
 
 <?php $desc = get_the_archive_description(); ?>
-<div class="container-fluid w-cover-box">
+<div class="container-fluid w-cover-box" id="">
 	<div class="row ml-0 mr-0">
 		<div class="col-md-8 ml-auto mr-auto text-center">
 			<h1 class="w-cover-title"><?php echo $category->name ?> Hintergrundbilder</h1>
@@ -14,7 +14,7 @@ $category = get_queried_object();
 </div>
 
 <div class="w-wallpaper-box mb-5">
-	<div class="container-fluid mobile-container">
+	<div class="container-fluid mobile-container wallper-page">
 		<div class="row pt-2">
 			<div class="col-md-12 text-center mb-5">
 				<?php
@@ -34,18 +34,6 @@ $category = get_queried_object();
 						</a>
 					</div>
 				<?php } ?>
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6707068879808301"
-						crossorigin="anonymous"></script>
-				<!-- klw1 -->
-				<ins class="adsbygoogle"
-					 style="display:block"
-					 data-ad-client="ca-pub-6707068879808301"
-					 data-ad-slot="1554746552"
-					 data-ad-format="auto"
-					 data-full-width-responsive="true"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
 			</div>
 		</div>
 		<center>
@@ -55,32 +43,63 @@ $category = get_queried_object();
 				float: none;
 			}
 		</style>
-		<div class="row w-wallpapers-container" style="margin-left:0;margin-right:0;">
-			<?php
-				$category = get_queried_object();
-				$params = array(
-					'post_type' => 'wallpaper2',
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'wallpaper',
-							'field' => 'term_id',
-							'terms' => $category->term_id
-						)
-					 ),
-					'posts_per_page' => 5
-				);
-				$query = new WP_Query($params);
+        <div class="row w-wallpapers-container" style="margin-left:0;margin-right:0;">
+            <?php
+            $category = get_queried_object();
+            $params = array(
+                'post_type' => 'wallpaper2',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'wallpaper',
+                        'field' => 'term_id',
+                        'terms' => $category->term_id
+                    )
+                ),
+                'posts_per_page' => 5
+            );
+            $query = new WP_Query($params);
 
-				if ($query->have_posts()) : ?>
-					<?php
-					while ($query->have_posts()) :
-						$query->the_post();
-						get_template_part('template-parts/content-wallpaper', 'wallpaper');
-					endwhile;
-				endif;
-			?>
-		</div>
-<!--		--><?php //echo do_shortcode('[ajax_load_more archive="true" offset="5" pause="true" pause_override="true" loading_style="infinite fading-circles" scroll="true" container_type="div" css_classes="row w-wallpapers-container" post_type="wallpaper" posts_per_page="5" transition_container="false" images_loaded="true"]') ?>
+            if ($query->have_posts()) {
+                while ($query->have_posts()) {
+                    $query->the_post();
+                    $category = get_the_terms(get_the_ID(), 'wallpaper')[0];
+                    $last_name = $category->name;
+                    $download_page = get_page_by_path('download-wallpaper');
+                    $images = get_field('file');
+                    $download_count_array = json_decode(get_field('download_count'), true);
+                    foreach($images as $image) { ?>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-5 w-wallpaper-item">
+                            <?php
+                            $carousel_inner = '';
+                            foreach($images as $image_inner) {
+                                $active = '';
+                                $image_link = wp_get_attachment_image_src($image_inner, 'full')[0];
+                                if ($image == $image_inner) {
+                                    $active = 'active';
+                                }
+                                $link_download = get_page_link($download_page) . '?id=' . $image_inner . '&post=' . get_the_ID();
+                                $carousel_inner .= '<div class="carousel-item ' . $active . '" data-file="' . $link_download . '"><img class="d-block w-100" src="' . $image_link . '"></div>';
+                            }
+                            ?>
+                            <div id="wallpaper-<?php echo get_the_ID() . '-' . $image ?>" class="w-wallpaper" data-title="<?php echo get_the_title() ?>" data-carousel="<?php echo htmlentities($carousel_inner); ?>" data-file="<?php echo get_page_link($download_page) . '?id=' . $image . '&post=' . get_the_ID() ?>" data-file-ios="<?php echo wp_get_attachment_image_src($image, 'full')[0] ?>">
+                                <div class="w-wallpaper-body">
+                                    <?php $thumnail = wp_get_attachment_image_src($image, 'home-thumb'); ?>
+                                    <img src="<?php echo $thumnail[0] ?>" class="w-image" alt="<?php echo get_the_title() ?>">
+                                    <div class="w-wallpaper-info">
+                                        <span class="w-wallpaper-info-category"><i class="fas fa-list-alt"></i></i><?php echo $category->name ?></span>
+                                        <span class="w-wallpaper-info-download"><i class="fas fa-download"></i><?php echo array_key_exists($image, $download_count_array) ? $download_count_array[$image] : 0; ?></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php }
+                }
+            } else {
+                // Không có bài viết nào được tìm thấy
+            }
+            ?>
+        </div>
+        <?php echo  do_shortcode('[ajax_load_more offset="5" pause="true" pause_override="true" container_type="div" css_classes="row w-wallpapers-container" loading_style="infinite fading-circles"  post_type="wallpaper2"  taxonomy="wallpaper" posts_per_page="5" transition_container="false" taxonomy_terms="'.$category->name.'"]'); ?>
 	</div>
 </div>
 <div class="modal fade" id="w-wallpaper-detail" tabindex="-1" role="dialog" aria-labelledby="w-wallpaper-detail-title" aria-hidden="true">
