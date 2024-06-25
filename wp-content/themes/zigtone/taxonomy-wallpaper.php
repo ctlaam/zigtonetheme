@@ -7,8 +7,8 @@ $category = get_queried_object();
 <div class="container-fluid w-cover-box" id="">
 	<div class="row ml-0 mr-0">
 		<div class="col-md-8 ml-auto mr-auto text-center">
-			<h1 class="w-cover-title"><?php echo $category->name ?> Hintergrundbilder</h1>
-			<h2 class="w-cover-subtitle"><?php echo $category->name ?> Hintergrundbilder - Kostenlose Hintergrundbilder <?php echo $category->name ?> für Handy</h2>
+			<h1 class="w-cover-title"><?php echo $category->name ?> Wallpapers</h1>
+			<h2 class="w-cover-subtitle"><?php echo $category->name ?> Wallpapers - Free Wallpapers <?php echo $category->name ?> for mobile</h2>
 		</div>
 	</div>
 </div>

@@ -13,13 +13,13 @@ $query = isset($_GET['q']) ? $_GET['q'] : '';
                     echo $query;
                     ?>
                 </h1>
-                <h2 class="w-cover-subtitle">Schöne Hintergrundbilder HD - Kostenlose Hintergrundbilder für Handy</h2>
+                <h2 class="w-cover-subtitle">Beautiful HD wallpapers - Free wallpapers for mobile</h2>
             </div>
         </div>
     </div>
 
     <div class="w-wallpaper-box mb-5">
-        <div class="container-fluid mobile-container">
+        <div class="container-fluid mobile-container wallper-page">
             <div class="row pt-3"></div>
             <div class="row pt-2">
                 <div class="col-md-12 text-center mb-5">

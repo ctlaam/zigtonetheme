@@ -742,7 +742,8 @@ body[data-theme="dark"] .ringtone.grid-item {
 .search .form-control {
   padding-right: 40px;
   padding-left: 16px;
-  width: 345px;
+  width: 240px;
+  font-size: 12px;
 }
 
 .has-menu,
@@ -831,6 +832,10 @@ body[data-theme="dark"] .ringtone.grid-item {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  ul {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .navbar-nav .nav-link {
@@ -2562,6 +2567,7 @@ table {
 
 .navbar-nav-btn {
   display: none;
+  margin-bottom: 1px;
 }
 
 .btn-close {
@@ -2578,48 +2584,50 @@ table {
   .navbar-nav {
     display: block;
   }
+  #header .navbar {
+    justify-content: unset;
+  }
+  .navbar-nav-btn {
+    display: block;
+    li {
+      list-style: none;
+    }
+  }
+  .search .form-control {
+    width: 289px;
+  }
+}
+@media screen and (max-width: 554px) {
+  .search .form-control {
+    width: 230px;
+  }
 }
 
-.footer {
-  background: #000;
-  padding: 30px 0px;
-  font-family: "Play", sans-serif;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
+@media screen and (max-width: 554px) {
+  .search .form-control {
+    width: 200px;
+  }
 }
 
-.footer .row {
+footer {
   width: 100%;
-  margin: 1% 0%;
-  padding: 0.6% 0%;
-  color: rgb(186, 186, 186);
-  font-size: 0.8em;
-}
-
-.footer .row a {
-  text-decoration: none;
-  color: rgb(186, 186, 186);
-  transition: 0.5s;
-}
-
-.footer .row a:hover {
   color: #fff;
+  background: #232323;
+  padding: 15px 0;
+
+  .social-link{
+    list-style:none;
+  }
+  .social-link li{
+    display:inline-block;
+    margin-right:10px;
+  }
+
 }
 
-.footer .row ul {
-  width: 100%;
-  margin: 0 !important;
-}
-
-.footer .row ul li {
-  display: inline-block;
-  margin: 0px 30px;
-}
-
-.footer .row a i {
-  font-size: 2em;
-  margin: 0% 1%;
+footer p a,
+footer p a:hover {
+  color: #fff
 }
 
 @media (max-width: 720px) {
