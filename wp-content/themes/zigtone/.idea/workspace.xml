@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40128cc6-0f4b-4c4d-9163-0fee75315bb0" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/template-parts/content-category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best-page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/custom-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/custom-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/custom-style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/custom-style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/custome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taxonomy-wallpaper.php" beforeDir="false" afterPath="$PROJECT_DIR$/taxonomy-wallpaper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template-parts/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallpaper-header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wallpaper-header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallpaper-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wallpaper-search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,9 @@
       <workItem from="1718452040118" duration="41000" />
       <workItem from="1718803711087" duration="10149000" />
       <workItem from="1719279393499" duration="11380000" />
-      <workItem from="1719313796229" duration="2252000" />
+      <workItem from="1719313796229" duration="4317000" />
+      <workItem from="1719367937690" duration="917000" />
+      <workItem from="1719369396016" duration="9511000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1718212700946</created>

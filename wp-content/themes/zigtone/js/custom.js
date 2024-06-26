@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
     var audio = null;
 
     $('.icon-play').each(function () {
+        console.log("vao dayy", $(this).data('link'))
         var audioUrl = $(this).data('link');
         var audioElement = new Audio(audioUrl);
 
@@ -90,11 +91,9 @@ jQuery(document).ready(function ($) {
 
     $(".navbar-toggler").click(function () {
         $(".navbar-collapse").toggle();
-        console.log("1111")
     })
 
     $("#search-btn").click(function () {
-        console.log("vaô datytt")
         $(".hide-on-search").animate({width:'toggle'},350);
         $(".navbar-nav-btn ").hide();
         $(this).hide();

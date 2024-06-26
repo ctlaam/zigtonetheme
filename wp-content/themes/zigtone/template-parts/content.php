@@ -11,11 +11,14 @@
 ?>
 <?php
 // Lấy thông tin cần thiết từ bài viết
-$ringtone_url = get_post_meta(get_the_ID(), 'ringtone_url', true) ?? "#";
-$duration = get_post_meta(get_the_ID(), 'duration', true) ?? "2:15 Sec";
-$downloads = get_post_meta(get_the_ID(), 'download_count', true) ?? "2077";
-$tags = wp_get_post_tags(get_the_ID(), array('fields' => 'names')) ?? ["mp3", "iphone"];
+$ringtone_url = get_post_meta(get_the_ID(), 'ringtone_url', true);
+$duration = get_post_meta(get_the_ID(), 'duration', true) ;
+$downloads = get_post_meta(get_the_ID(), 'download_count', true);
+$view = get_post_meta(get_the_ID(), 'view', true);
+$tags = wp_get_post_tags(get_the_ID(), array('fields' => 'names'));
 $categorys = get_the_category();
+// Lấy ID của attachment (file MP3)
+
 ?>
 
 <div class="ringtone grid-item" data-id="<?php the_ID(); ?>">
@@ -30,7 +33,7 @@ $categorys = get_the_category();
                 <h3 class="title"><?php the_title(); ?></h3>
                 <div class="info">
                     <div class="duration"><?php echo esc_html($duration); ?></div>
-                    <div class="downloads"><?php echo esc_html($downloads); ?></div>
+                    <div class="downloads"><?php echo esc_html($view); ?></div>
                 </div>
 
             </div>

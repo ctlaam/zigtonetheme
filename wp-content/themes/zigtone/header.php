@@ -47,7 +47,7 @@
                         <a class="navbar-brand d-flex align-items-center py-0" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                             <span class="navbar-brand-text" style="color: red;">Zingtone</span><span class="navbar-brand-text">Free</span>
                         </a>
-                        <div class="collapse navbar-collapse" id="main-navbar">
+                        <div class="navbar-collapse" id="main-navbar">
                             <ul class="navbar-nav mb-3 mb-lg-0">
 <!--                                <li class="nav-item"><a class="nav-link " href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--">Home</a></li>-->
                                 <li class="nav-item"><a class="nav-link " href="#" rel="nofollow">Latest Ringtones</a>
@@ -55,6 +55,8 @@
                                 <li class="nav-item"><a class="nav-link " href="#" rel="nofollow">Best Ringtones</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link " href="#" rel="nofollow">iPhone Ringtone</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link " href="#" rel="nofollow">Samsung Ringtone</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link " href="http://zingtone.local/phone-wallpaper">Wallpaper</a>
                                 </li>

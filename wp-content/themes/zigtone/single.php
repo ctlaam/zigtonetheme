@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<?php $downloadPage = get_page_by_path('download');  ?>
+<?php $downloadPage = get_page_by_path('download'); ?>
     <div class="page-warp col">
         <div class="container ">
             <section id="sec-ringtones">
@@ -32,16 +32,14 @@ get_header();
                                 $filetype = wp_check_filetype(wp_basename($file_url));
 
                                 ?>
-                                <div class="breadcrumb-post" id="goPlay">
-                                    <p id="breadcrumbs" class="post_breadcrumbs">
-                                    <span>
-                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
-                                        »
-                                        <span class="breadcrumb_last" aria-current="page"><?php the_title(); ?></span>
-                                    </span>
-                                    </p>
-                                    <p></p>
-                                </div>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a
+                                                    href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+                                        <li class="breadcrumb-item active"
+                                            aria-current="page"><?php the_title(); ?></li>
+                                    </ol>
+                                </nav>
                                 <div class="rt-info-post">
                                     <div class="left-info-post">
                                         <h1 itemprop="name"><?php the_title(); ?></h1>
@@ -148,7 +146,7 @@ get_header();
                                         <tr id="download-now">
                                             <th>Type</th>
                                             <td>
-                                                <?php echo $filetype['type'] ?>
+                                                MP3/M4R
                                             </td>
                                         </tr>
 
@@ -161,7 +159,8 @@ get_header();
                                         <tr>
                                             <th>Download Now!</th>
                                             <td>
-                                                <a class="buton-download download-button" href="javascript:void()" data-toggle="modal" data-target="#download-popup">
+                                                <a class="buton-download download-button" href="javascript:void()"
+                                                   data-toggle="modal" data-target="#download-popup">
                                                     <i class="fas fa-download"></i>Download
                                                 </a>
                                             </td>
@@ -169,7 +168,7 @@ get_header();
                                         <tr>
                                             <th>Update</th>
                                             <td>
-                                                <?php echo get_the_modified_date(); ?>
+                                                <?php echo get_the_modified_date('Y/m/d'); ?>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -189,29 +188,32 @@ get_header();
                                             </div>
 
                                             <?php
-                                            $params = array('posts_per_page' => 15);
+                                            $params = array(
+                                                'posts_per_page' => 20,
+                                                'orderby' => 'rand'
+                                            );
                                             $query = new WP_Query($params);
 
                                             if ($query->have_posts()) : the_post();
 
                                                 while ($query->have_posts()) :
                                                     $query->the_post();
+                                                    $ringtone_url = get_post_meta(get_the_ID(), 'ringtone_url', true);
+                                                    $duration = get_post_meta(get_the_ID(), 'duration', true);
                                                     ?>
                                                     <div class="same-posts-container">
                                                         <div class="col-md-12 col-lg-6 container-same-item">
                                                             <div class="box-same-item">
-                                                                <div class="box-play">
-                                                                    <svg height="45px" width="45px"
-                                                                         xmlns="http://www.w3.org/2000/svg"
-                                                                         viewBox="0 0 512 512">
-                                                                        <path fill="#51A0A4"
-                                                                              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"/>
-                                                                    </svg>
+                                                                <div class="mediPlayer box-play icon-play-random" data-fid="<?php echo esc_attr($ringtone_url); ?>">
+                                                                    <i class="far fa-play-circle icon-play icon-play-suggest " data-link="<?php echo esc_html(wp_get_attachment_url(get_field('file'))); ?>"></i>
                                                                 </div>
-                                                                <div class="title-audio">
-                                                                    <a href="https://zigtone.com/pop/dum-masala-ringtone/"
-                                                                       title="Dum Masala"
-                                                                       class="link-post"><?php the_title(); ?></a>
+                                                                <div>
+                                                                    <span class="title-audio details">
+                                                                        <a href="<?php the_permalink(); ?>"
+                                                                           title="<?php the_title() ?>"
+                                                                           class="link-post"><?php the_title(); ?></a>
+                                                                    </span>
+                                                                    <span class="group-subtitle duration"><?php $duration = get_post_meta(get_the_ID(), 'duration', true) ;echo esc_html($duration) ?></span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -228,7 +230,8 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="modal fade" id="download-popup" tabindex="-1" role="dialog" aria-labelledby="newsPopupLabel" aria-hidden="true">
+                            <div class="modal fade" id="download-popup" tabindex="-1" role="dialog"
+                                 aria-labelledby="newsPopupLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -241,10 +244,12 @@ get_header();
                                             <br/><strong>Download Here</strong>
                                             <div id="wait-for" class="mt-4"></div>
                                             <div class="download-box mt-4 d-none">
-                                                <a class="buton-download" href="<?php echo get_page_link($downloadPage) . '?id=' . get_field('file') . '&post=' . get_the_ID() ?>">
+                                                <a class="buton-download"
+                                                   href="<?php echo get_page_link($downloadPage) . '?id=' . get_field('file') . '&post=' . get_the_ID() ?>">
                                                     <i class="fas fa-download"></i>MP3
                                                 </a>
-                                                <a class="buton-download ml-2" href="<?php echo get_page_link($downloadPage) . '?id=' . get_field('file') . '&post=' . get_the_ID() . '&type=m4r' ?>">
+                                                <a class="buton-download ml-2"
+                                                   href="<?php echo get_page_link($downloadPage) . '?id=' . get_field('file') . '&post=' . get_the_ID() . '&type=m4r' ?>">
                                                     <i class="fas fa-download"></i>M4R
                                                 </a>
 
@@ -260,8 +265,8 @@ get_header();
                                                     );
                                                     $query = new WP_Query($params);
 
-                                                    if ( $query->have_posts() ) :
-                                                        while ( $query->have_posts() ) :
+                                                    if ($query->have_posts()) :
+                                                        while ($query->have_posts()) :
                                                             $query->the_post();
                                                             $id = get_the_ID();
                                                             $files = get_field('file');
@@ -281,13 +286,16 @@ get_header();
                                                         $image = $images[$k];
                                                         ?>
                                                         <div class="w-gift">
-                                                            <a href="http://zingtone.local/phone-wallpaper#wallpaper-<?php echo $image['id'] ?>-<?php echo $image['file'] ?>" rel="nofollow" target="_blank">
-                                                                <img src="<?php echo $image['url'] ?>"rel="nofollow" target="_blank">
+                                                            <a href="http://zingtone.local/phone-wallpaper#wallpaper-<?php echo $image['id'] ?>-<?php echo $image['file'] ?>"
+                                                               rel="nofollow" target="_blank">
+                                                                <img src="<?php echo $image['url'] ?>" rel="nofollow"
+                                                                     target="_blank">
                                                             </a>
                                                         </div>
                                                     <?php } ?>
                                                     <div class="mt-3 text-center p-1">
-                                                        <small>Coole Klingeltöne + Schöne Hintergrundbilder für Handy</small>
+                                                        <small>Coole Klingeltöne + Schöne Hintergrundbilder für
+                                                            Handy</small>
                                                     </div>
                                                 </div>
                                             </div>
@@ -312,12 +320,18 @@ get_header();
                                                               stroke-linejoin="round"></path>
                                                     </svg>
                                                 </div>
-                                                <h3 class="heading">TOP Ringtones list</h3>
+                                                <h3 class="heading">TOP Views</h3>
                                             </div>
                                             <div class="sb-body">
                                                 <ul class="ringtones list-group">
                                                     <?php
-                                                    $params = array('posts_per_page' => 15);
+                                                    $params = array(
+                                                        'posts_per_page' => 4,
+                                                        'post_type' => 'post',
+                                                        'meta_key' => 'view',
+                                                        'orderby' => 'meta_value_num',
+                                                        'order' => 'DESC',
+                                                    );
                                                     $query = new WP_Query($params);
 
                                                     if ($query->have_posts()) : the_post();
@@ -325,33 +339,24 @@ get_header();
                                                         while ($query->have_posts()) :
 
                                                             $query->the_post();
+                                                            $ringtone_url = get_post_meta(get_the_ID(), 'ringtone_url', true);
                                                             ?>
                                                             <li class="ringtone list-group-item" data-id="14067">
-                                                                <div class="list-group-player mediPlayer"
-                                                                     data-fid="0qpu3tyv4nz0gs838ewgmv27kz5xcwvds">
-                                                                    <svg height="35px" width="35px"
-                                                                         xmlns="http://www.w3.org/2000/svg"
-                                                                         viewBox="0 0 512 512">
-                                                                        <path fill="#51A0A4"
-                                                                              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path>
-                                                                    </svg>
+                                                                <div class="mediPlayer box-play" data-fid="<?php echo esc_attr($ringtone_url); ?>">
+                                                                    <i class="far fa-play-circle icon-play icon-play-suggest" data-link="<?php echo esc_html(wp_get_attachment_url(get_field('file'))); ?>"></i>
                                                                 </div>
                                                                 <div class="list-group-content">
-                                                                    <a href="https://mobcup.com.co/tu-maro-dariyo-ringtone-download-pagalworld-4nz0gs8"
+                                                                    <a href="<?php the_permalink(); ?>"
                                                                        class="list-group-title text-truncate"
                                                                        title="Tu Maro Dariyo Ringtone Download Pagalworld"><?php the_title() ?></a>
-                                                                    <span class="list-group-subtitle">00:21 sec • <?php echo esc_html(get_field('view')); ?> views</span>
+                                                                    <span class="list-group-subtitle">00:21 sec • <?php echo esc_html(get_field('view')); ?> Views</span>
                                                                 </div>
                                                                 <span class="btn btn-icon btn-sm btn-default rounded-pill me-2 d-btn">
-                                            <svg class="icon download-icon" fill="#000000" width="14px" height="14px"
-                                                 viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                                <title>download-cloud</title>
-                                                <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path>
-                                            </svg>
+                                            <svg fill="#000000" width="20px" height="20px" viewBox="-3.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>view</title> <path d="M12.406 13.844c1.188 0 2.156 0.969 2.156 2.156s-0.969 2.125-2.156 2.125-2.125-0.938-2.125-2.125 0.938-2.156 2.125-2.156zM12.406 8.531c7.063 0 12.156 6.625 12.156 6.625 0.344 0.438 0.344 1.219 0 1.656 0 0-5.094 6.625-12.156 6.625s-12.156-6.625-12.156-6.625c-0.344-0.438-0.344-1.219 0-1.656 0 0 5.094-6.625 12.156-6.625zM12.406 21.344c2.938 0 5.344-2.406 5.344-5.344s-2.406-5.344-5.344-5.344-5.344 2.406-5.344 5.344 2.406 5.344 5.344 5.344z"></path> </g></svg>
                                         </span>
                                                                 <span class="list-group-number">#<?php echo $count; ?></span>
                                                             </li>
-                                                        <?php
+                                                            <?php
                                                             $count++;
                                                         endwhile;
                                                         wp_reset_postdata();
@@ -367,16 +372,20 @@ get_header();
                                         <div class="sb-row">
                                             <div class="sb-header d-flex align-items-center">
                                                 <div class="sb-header-icon rounded-pill">
-                                                    <svg class="icon chart-icon">
-                                                        <use xlink:href="#chart-icon"></use>
-                                                    </svg>
+                                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1329 19.5001C11.2535 19.5139 10.453 18.9947 10.1068 18.1862C9.76067 17.3776 9.93758 16.44 10.5546 15.8132C11.1716 15.1864 12.1062 14.9946 12.9202 15.328C13.7341 15.6613 14.2658 16.4535 14.2659 17.3331C14.2705 17.9033 14.0483 18.4519 13.6483 18.8583C13.2482 19.2647 12.7032 19.4956 12.1329 19.5001Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 6.24998C11.4142 6.24998 11.75 5.91419 11.75 5.49998C11.75 5.08576 11.4142 4.74998 11 4.74998V6.24998ZM5 4.74998C4.58579 4.74998 4.25 5.08576 4.25 5.49998C4.25 5.91419 4.58579 6.24998 5 6.24998V4.74998ZM11 9.24998C11.4142 9.24998 11.75 8.91419 11.75 8.49998C11.75 8.08576 11.4142 7.74998 11 7.74998V9.24998ZM5 7.74998C4.58579 7.74998 4.25 8.08576 4.25 8.49998C4.25 8.91419 4.58579 9.24998 5 9.24998V7.74998ZM9 12.25C9.41421 12.25 9.75 11.9142 9.75 11.5C9.75 11.0858 9.41421 10.75 9 10.75V12.25ZM5 10.75C4.58579 10.75 4.25 11.0858 4.25 11.5C4.25 11.9142 4.58579 12.25 5 12.25V10.75ZM13.515 17.333C13.515 17.7472 13.8508 18.083 14.265 18.083C14.6792 18.083 15.015 17.7472 15.015 17.333H13.515ZM15.015 8.99998C15.015 8.58576 14.6792 8.24998 14.265 8.24998C13.8508 8.24998 13.515 8.58576 13.515 8.99998H15.015ZM14.265 8.99998H13.515C13.515 9.21257 13.6052 9.41518 13.7632 9.55741C13.9212 9.69964 14.1322 9.76813 14.3436 9.74585L14.265 8.99998ZM14.265 7.49998H15.015C15.015 7.48645 15.0146 7.47292 15.0139 7.45941L14.265 7.49998ZM14.8187 6.05369L14.2884 5.52336V5.52336L14.8187 6.05369ZM16.265 5.49998L16.2244 6.24888C16.2379 6.24961 16.2515 6.24998 16.265 6.24998V5.49998ZM17.42 5.49998V6.24999L17.4235 6.24997L17.42 5.49998ZM19.0042 6.99586L18.2553 7.03533V7.03533L19.0042 6.99586ZM17.586 8.64998L17.5107 7.90376L17.5074 7.90411L17.586 8.64998ZM11 4.74998H5V6.24998H11V4.74998ZM11 7.74998H5V9.24998H11V7.74998ZM9 10.75H5V12.25H9V10.75ZM15.015 17.333V8.99998H13.515V17.333H15.015ZM15.015 8.99998V7.49998H13.515V8.99998H15.015ZM15.0139 7.45941C14.9962 7.13326 15.1181 6.81498 15.349 6.58402L14.2884 5.52336C13.7562 6.05557 13.4754 6.78899 13.5161 7.54055L15.0139 7.45941ZM15.349 6.58402C15.58 6.35306 15.8983 6.23121 16.2244 6.24888L16.3056 4.75108C15.554 4.71036 14.8206 4.99115 14.2884 5.52336L15.349 6.58402ZM16.265 6.24998H17.42V4.74998H16.265V6.24998ZM17.4235 6.24997C17.8659 6.24789 18.232 6.59355 18.2553 7.03533L19.7532 6.9564C19.6878 5.71524 18.6593 4.74414 17.4165 4.74999L17.4235 6.24997ZM18.2553 7.03533C18.2786 7.47712 17.9508 7.85934 17.5107 7.90377L17.6613 9.39619C18.8979 9.27137 19.8186 8.19755 19.7532 6.9564L18.2553 7.03533ZM17.5074 7.90411L14.1864 8.25411L14.3436 9.74585L17.6646 9.39585L17.5074 7.90411Z" fill="#000000"></path> </g></svg>
                                                 </div>
-                                                <h3 class="heading">Best Collection list</h3>
+                                                <h3 class="heading">Top Downloaded</h3>
                                             </div>
                                             <div class="sb-body">
                                                 <ul class="ringtones list-group">
                                                     <?php
-                                                    $params = array('posts_per_page' => 15);
+                                                    $params = array(
+                                                        'posts_per_page' => 4,
+                                                        'post_type' => 'post',
+                                                        'meta_key' => 'download_count',
+                                                        'orderby' => 'meta_value_num',
+                                                        'order' => 'DESC',
+                                                    );
                                                     $query = new WP_Query($params);
 
                                                     if ($query->have_posts()) : the_post();
@@ -384,19 +393,14 @@ get_header();
                                                         while ($query->have_posts()) :
 
                                                             $query->the_post();
+                                                            $ringtone_url = get_post_meta(get_the_ID(), 'ringtone_url', true);
                                                             ?>
                                                             <li class="ringtone list-group-item" data-id="14067">
-                                                                <div class="list-group-player mediPlayer"
-                                                                     data-fid="0qpu3tyv4nz0gs838ewgmv27kz5xcwvds">
-                                                                    <svg height="35px" width="35px"
-                                                                         xmlns="http://www.w3.org/2000/svg"
-                                                                         viewBox="0 0 512 512">
-                                                                        <path fill="#51A0A4"
-                                                                              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path>
-                                                                    </svg>
+                                                                <div class="mediPlayer box-play" data-fid="<?php echo esc_attr($ringtone_url); ?>">
+                                                                    <i class="far fa-play-circle icon-play icon-play-suggest" data-link="<?php echo esc_html(wp_get_attachment_url(get_field('file'))); ?>"></i>
                                                                 </div>
                                                                 <div class="list-group-content">
-                                                                    <a href="https://mobcup.com.co/tu-maro-dariyo-ringtone-download-pagalworld-4nz0gs8"
+                                                                    <a href="<?php the_permalink(); ?>"
                                                                        class="list-group-title text-truncate"
                                                                        title="Tu Maro Dariyo Ringtone Download Pagalworld"><?php the_title() ?></a>
                                                                     <span class="list-group-subtitle">00:21 sec • <?php echo esc_html(get_field('view')); ?> views</span>

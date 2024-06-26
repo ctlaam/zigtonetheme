@@ -1308,7 +1308,7 @@ h3 {
 .ringtone.grid-item .info .downloads::after {
   font-weight: 400;
   margin-left: 4px;
-  content: "Downloads";
+  content: "Views";
 }
 
 .spin,
@@ -2824,11 +2824,6 @@ footer p a:hover {
     color: #00f;
   }
 
-  .icon-play {
-    font-size: 45px;
-    color: #fe4365;
-    cursor: pointer;
-  }
 
   .plyr__control {
     border: 1px solid #167d83;
@@ -3109,7 +3104,6 @@ footer p a:hover {
   }
 
   .link-post {
-    padding-bottom: 10px;
     font-size: 15px;
     font-weight: 700;
     color: #565656;
@@ -3267,15 +3261,6 @@ footer p a:hover {
     font-size: 20px;
     color: #fff;
     margin: 0;
-  }
-
-  .box-play {
-    float: left;
-    padding-top: 13px;
-    padding-left: 15px;
-    border-right: 1px solid #bfbfbf;
-    height: 100%;
-    padding-right: 15px;
   }
 
   .box-play img {
@@ -3559,8 +3544,12 @@ footer p a:hover {
     width: 99.4%;
     border: 1px solid #e4e4e4;
     margin-bottom: 3px;
+    display: flex;
+    align-items: center;
   }
-
+  .icon-play-random {
+    margin-left: 10px;
+  }
   .content-aside {
     height: 75px;
     width: 100%;
@@ -7494,4 +7483,25 @@ input[type="range"].plyr__tab-focus::-webkit-slider-runnable-track {
 .w-wallpaper-info-download {
   position: absolute;
   right: 7px;
+}
+.breadcrumb {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+  }
+  ul.navbar-nav {
+    flex-direction: unset;
+  }
+}
+.icon-play-suggest {
+  font-size: 32px;
+}
+.group-subtitle {
+  display: block;
+  color: var(--bs-body-color);
+  font-size: 13px;
+  padding-left: 10px;
 }
